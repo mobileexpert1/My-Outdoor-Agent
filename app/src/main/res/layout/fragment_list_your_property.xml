@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/profile_grey"
+    tools:context=".fragment.listyourproperty.ListYourPropertyFragment">
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/ilToolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ilToolbar"
+        android:background="@color/profile_grey">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/_10sdp">
+
+
+            <RelativeLayout
+                android:id="@+id/complete_RL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <TextView
+                    style="@style/MediumGreyTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:padding="@dimen/_10sdp"
+                    android:text="@string/following_information"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_15ssp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rlFirstName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/complete_RL"
+                android:layout_marginVertical="@dimen/_1sdp">
+
+
+                <EditText
+                    android:id="@+id/edtFirstName"
+                    style="@style/RectangleMyWalletBoxLayoutStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_45sdp"
+                    android:hint="First Name"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:padding="@dimen/_15sdp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="@dimen/_11ssp"
+                    android:textStyle="normal" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlLastName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlFirstName"
+                android:layout_marginVertical="@dimen/_1sdp">
+
+
+                <EditText
+                    android:id="@+id/edtLastName"
+                    style="@style/RectangleMyWalletBoxLayoutStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_45sdp"
+                    android:hint="Last Name"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:padding="@dimen/_15sdp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="@dimen/_11ssp"
+                    android:textStyle="normal" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlLastName"
+                android:layout_marginVertical="@dimen/_1sdp">
+
+
+                <EditText
+                    android:id="@+id/edtPhone"
+                    style="@style/RectangleMyWalletBoxLayoutStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_45sdp"
+                    android:hint="Phone"
+                    android:imeOptions="actionNext"
+                    android:inputType="phone"
+                    android:maxLines="1"
+                    android:padding="@dimen/_15sdp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="@dimen/_11ssp"
+                    android:textStyle="normal" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rlEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlPhone"
+                android:layout_marginVertical="@dimen/_1sdp">
+
+
+                <EditText
+                    android:id="@+id/edtEmail"
+                    style="@style/RectangleMyWalletBoxLayoutStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_45sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:hint=" Email"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:padding="@dimen/_15sdp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="@dimen/_11ssp"
+                    android:textStyle="normal" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlEmail"
+                android:layout_marginVertical="@dimen/_1sdp">
+
+
+                <EditText
+                    android:id="@+id/edtAddress"
+                    style="@style/RectangleMyWalletBoxLayoutStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_45sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:hint=" Address"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:padding="@dimen/_15sdp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="@dimen/_11ssp"
+                    android:textStyle="normal" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlCity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlAddress"
+                android:layout_marginVertical="@dimen/_1sdp">
+
+
+                <EditText
+                    android:id="@+id/edtCity"
+                    style="@style/RectangleMyWalletBoxLayoutStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_45sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:hint=" City"
+                    android:imeOptions="actionDone"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:padding="@dimen/_15sdp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="@dimen/_11ssp"
+                    android:textStyle="normal" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rlSelectType"
+                style="@style/RectangleMyWalletBoxLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_below="@+id/rlAddress"
+                android:layout_marginBottom="@dimen/_150sdp">
+
+                <com.skydoves.powerspinner.PowerSpinnerView
+                    android:id="@+id/psvState"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="left|center_vertical"
+                    android:hint="State "
+                    android:padding="@dimen/_15sdp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="@dimen/_11ssp"
+                    android:textStyle="normal"
+                    app:spinner_arrow_gravity="end"
+                    app:spinner_arrow_padding="@dimen/_8sdp"
+                    app:spinner_arrow_tint="@color/green"
+                    app:spinner_divider_show="true"
+                    app:spinner_divider_size="0.4dp"
+                    app:spinner_item_array="@array/select_type"
+                    app:spinner_popup_animation="dropdown"
+                    app:spinner_popup_background="@color/white"
+                    app:spinner_popup_elevation="@dimen/_14sdp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rlZip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlSelectType"
+                android:layout_marginVertical="@dimen/_1sdp">
+
+
+                <EditText
+                    android:id="@+id/edtZip"
+                    style="@style/RectangleMyWalletBoxLayoutStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_45sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:hint=" Zip"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:padding="@dimen/_15sdp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="@dimen/_11ssp"
+                    android:textStyle="normal" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlLandOwnerType"
+                style="@style/RectangleMyWalletBoxLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_below="@+id/rlZip"
+                android:layout_marginBottom="@dimen/_150sdp">
+
+                <com.skydoves.powerspinner.PowerSpinnerView
+                    android:id="@+id/psvLandOwnerType"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="left|center_vertical"
+                    android:hint="Landowner Type "
+                    android:padding="@dimen/_15sdp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="@dimen/_11ssp"
+                    android:textStyle="normal"
+                    app:spinner_arrow_gravity="end"
+                    app:spinner_arrow_padding="@dimen/_8sdp"
+                    app:spinner_arrow_tint="@color/green"
+                    app:spinner_divider_show="true"
+                    app:spinner_divider_size="0.4dp"
+                    app:spinner_item_array="@array/select_type"
+                    app:spinner_popup_animation="dropdown"
+                    app:spinner_popup_background="@color/white"
+                    app:spinner_popup_elevation="@dimen/_14sdp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/llSubscription"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_18sdp"
+                android:layout_below="@+id/rlLandOwnerType"
+                android:orientation="horizontal"
+                android:paddingHorizontal="@dimen/_5sdp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="@dimen/_8sdp"
+                    android:text="Subscription Type"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_11ssp" />
+
+                <TextView
+                    android:id="@+id/tvChangePlan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/change_plan"
+                    android:textColor="@color/com_facebook_blue" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rlBasic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/llSubscription"
+                android:layout_marginVertical="@dimen/_1sdp">
+
+
+                <TextView
+                    android:id="@+id/tvBasic"
+                    style="@style/RectangleMyWalletBoxLayoutStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_45sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:hint=" Basic"
+                    android:imeOptions="actionDone"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:padding="@dimen/_15sdp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="@dimen/_11ssp"
+                    android:textStyle="normal" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tvListYourPropertySubmit"
+                style="@style/RoundCornerGreenLoginButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlBasic"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_200sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:padding="@dimen/_13sdp"
+                android:text="@string/submit" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

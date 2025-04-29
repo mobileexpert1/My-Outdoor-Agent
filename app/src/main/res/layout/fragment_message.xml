@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/profile_grey"
+    tools:context=".fragment.message_new.MessageNewFragment">
+
+    <include
+        android:id="@+id/northcascadesRL"
+        layout="@layout/toolbar" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvChatMessage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomSenderRL"
+        android:layout_below="@+id/northcascadesRL"
+        android:background="@color/profile_grey"
+        android:orientation="vertical">
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+    <RelativeLayout
+        android:id="@+id/bottomSenderRL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/profile_grey"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom">
+
+        <LinearLayout
+            android:id="@+id/edittestLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/_3sdp"
+            android:paddingVertical="@dimen/_7sdp"
+            android:weightSum="2">
+
+            <EditText
+                android:id="@+id/etMessages"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_45sdp"
+                android:imeOptions="actionDone"
+                android:layout_weight="1.9"
+                android:background="@drawable/hpl_write_editext_bg"
+                android:fontFamily="@font/nunito_sans_regular"
+                android:gravity="start|center"
+                android:hint="Type a message"
+                android:paddingStart="@dimen/_20sdp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="#656161"
+                />
+
+            <ImageView
+                android:layout_gravity="center"
+                android:id="@+id/btnSend"
+                android:layout_width="25dp"
+                android:layout_height="35dp"
+                android:layout_toRightOf="@+id/messageET"
+                android:layout_weight="0.1"
+                android:src="@drawable/ic_send"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+   <!-- <RelativeLayout
+        android:id="@+id/bottomSenderRL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/profile_grey"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom">
+
+        <LinearLayout
+            android:id="@+id/edittestLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/_3sdp"
+            android:paddingVertical="@dimen/_7sdp"
+            android:weightSum="2">
+
+            <EditText
+                android:id="@+id/etMessages"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_weight="1.7"
+                android:background="@drawable/hpl_write_editext_bg"
+                android:fontFamily="@font/nunito_sans_regular"
+                android:gravity="start|center"
+                android:hint="I Write"
+                android:paddingStart="@dimen/_20sdp"
+                android:singleLine="false"
+                android:textColor="@color/black"
+                android:textColorHint="#656161" />
+
+            <ImageView
+                android:id="@+id/btnSend"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_toRightOf="@+id/etMessages"
+                android:layout_weight="0.2"
+                android:background="@drawable/ic_send"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>-->
+
+
+</RelativeLayout>

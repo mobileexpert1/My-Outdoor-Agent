@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--<style name="RoundCornerGreenLoginButtonStyle" parent="TextAppearance.AppCompat.Small" >
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/nunito_sans_bold</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:background">@drawable/login_register_shape_green</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:gravity">center</item>
+    </style> -->
+
+    <style name="RoundCornerGreenLoginButtonStyle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/nunito_sans_semibold</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">@dimen/_10sdp</item>
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="android:layout_margin">@dimen/_9sdp</item>
+        <item name="android:background">@drawable/login_register_shape_green</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="FacebookLoginButton">
+        <item name="android:background">@drawable/ic_facebook__1</item>
+    </style>
+
+    <style name="iconGenText">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#fff</item>
+    </style>
+
+
+
+<!--    <style name="RoundCornerWhiteLoginButtonStyle" parent="TextAppearance.AppCompat.Small" >
+        <item name="android:textColor">@color/light_grey</item>
+        <item name="android:fontFamily">@font/nunito_sans_extrabold</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">@dimen/_12sdp</item>
+        <item name="android:textSize">@dimen/_11ssp</item>
+        <item name="android:layout_margin">@dimen/_9sdp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:gravity">center</item>
+    </style>-->
+
+    <style name="RoundCornerWhiteLoginButtonStyle" >
+        <item name="android:textColor">@color/light_grey</item>
+        <item name="android:fontFamily">@font/nunito_sans_semibold</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">@dimen/_10sdp</item>
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="android:layout_margin">@dimen/_9sdp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+<!--    <style name="RoundCornerLoginRegisterLayoutStyle" parent="TextAppearance.AppCompat.Small" >
+        <item name="android:background">@drawable/login_register_outer_shape</item>
+    </style> -->
+
+    <style name="RoundCornerLoginRegisterLayoutStyle">
+        <item name="android:background">@drawable/login_register_outer_shape</item>
+    </style>
+
+    <!--<style name="LargeBoldBlackTextStyle" parent="TextAppearance.AppCompat.Large">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/nunito_sans_extrabold</item>
+    </style>-->
+
+    <style name="LargeBoldBlackTextStyle" >
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/nunito_sans_extrabold</item>
+        <item name="android:textSize">@dimen/_15ssp</item>
+    </style>
+
+    <style name="LargeBlackTextStyle" parent="TextAppearance.AppCompat.Large">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/nunito_sans_bold</item>
+    </style>
+
+<!--    <style name="SmallGreyTextStyle" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textColor">@color/greylr</item>
+        <item name="android:fontFamily">@font/nunito_sans_bold</item>
+    </style> -->
+
+    <style name="SmallGreyTextStyle">
+        <item name="android:textColor">@color/greylr</item>
+        <item name="android:fontFamily">@font/nunito_sans_bold</item>
+    </style>
+
+    <style name="MediumGreyTextStyle2" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textColor">@color/greylr</item>
+        <item name="android:fontFamily">@font/nunito_sans_regular</item>
+    </style>
+
+
+    <style name="MediumGreyTextStyle" >
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/greylr</item>
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="android:fontFamily">@font/nunito_sans_semibold</item>
+    </style>
+
+    <style name="MediumGreenTextStyle" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textColor">@color/green</item>
+        <item name="android:fontFamily">@font/nunito_sans_bold</item>
+    </style>
+
+    <style name="SmallGreenTextStyle">
+        <item name="android:textColor">@color/green</item>
+        <item name="android:textSize">@dimen/_10ssp</item>
+        <item name="android:fontFamily">@font/nunito_sans_semibold</item>
+    </style>
+
+    <style name="SmallGreenTextStyle2" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textColor">@color/green</item>
+        <item name="android:fontFamily">@font/nunito_sans_semibold</item>
+    </style>
+
+    <style name="RectangleGreenBorderEdittextLayoutStyle" parent="TextAppearance.AppCompat.Small" >
+        <item name="android:background">@drawable/green_border_shape</item>
+        <item name="android:textColor">@color/greylr</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:imeOptions">actionDone</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:gravity">left</item>
+    </style>
+
+    <!--<style name="RectangleSimpleBorderEdittextLayoutStyle" parent="TextAppearance.AppCompat.Small" >
+        <item name="android:textColor">@color/greylr</item>
+        <item name="android:fontFamily">@font/nunito_sans_semibold</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:padding">@dimen/_8sdp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:imeOptions">actionDone</item>
+        <item name="android:gravity">left</item>
+    </style>    -->
+
+    <style name="RectangleSimpleBorderEdittextLayoutStyle"  >
+        <item name="android:textColor">@color/greylr</item>
+        <item name="android:fontFamily">@font/nunito_sans_semibold</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:padding">@dimen/_5sdp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:imeOptions">actionDone</item>
+        <item name="android:gravity">left</item>
+    </style>
+
+    <style name="RectangleGreenBorderLayoutStyle" parent="TextAppearance.AppCompat.Small" >
+        <item name="android:background">@drawable/green_border_shape</item>
+        <item name="android:textColor">@color/greylr</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:padding">@dimen/_7sdp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:imeOptions">actionDone</item>
+        <item name="android:layout_margin">@dimen/_9sdp</item>
+        <item name="android:gravity">left</item>
+    </style>
+
+    <style name="RectangleMyWalletBoxLayoutStyle"  >
+        <item name="android:background">@drawable/edit_text_shape</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_margin">@dimen/_8sdp</item>
+    </style>
+
+    <style name="RectangleDeleteBoxLayoutStyle"  >
+        <item name="android:background">@drawable/delete_button</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_margin">@dimen/_8sdp</item>
+    </style>
+
+
+<!--    <style name="RoundCornerGreyAccountButtonStyle" parent="TextAppearance.AppCompat.Small" >
+        <item name="android:textColor">@color/light_grey</item>
+        <item name="android:fontFamily">@font/nunito_sans_semibold</item>
+        <item name="android:background">@drawable/account_two_tab_shape</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:gravity">center</item>
+    </style>  -->
+
+    <style name="RoundCornerGreyAccountButtonStyle" >
+        <item name="android:textColor">@color/light_grey</item>
+        <item name="android:fontFamily">@font/nunito_sans_semibold</item>
+        <item name="android:background">@drawable/account_two_tab_shape</item>
+        <item name="android:padding">@dimen/_12sdp</item>
+        <item name="android:textSize">@dimen/_10ssp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+<!--    <style name="RoundCornerGreenAccountButtonStyle" parent="TextAppearance.AppCompat.Small" >
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/nunito_sans_semibold</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:background">@drawable/login_register_shape_green</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:gravity">center</item>
+    </style>  -->
+    <style name="RoundCornerGreenAccountButtonStyle"  >
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/nunito_sans_semibold</item>
+        <item name="android:padding">@dimen/_12sdp</item>
+        <item name="android:textSize">@dimen/_10ssp</item>
+        <item name="android:background">@drawable/login_register_shape_green</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="RoundCornerLightGreenButtonStyle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/nunito_sans_semibold</item>
+        <item name="android:background">@drawable/light_green_box_button_shape</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="RoundCornerGreenButtonStyle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/nunito_sans_semibold</item>
+        <item name="android:background">@drawable/login_register_shape_green</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="RoundCornerGreyButtonStyle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/nunito_sans_semibold</item>
+        <item name="android:background">@drawable/dark_grey_button_shape</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="TabsButtonShapeGrey">
+       <item name="android:textColor">@color/light_grey</item>
+        <item name="android:fontFamily">@font/nunito_sans_semibold</item>
+        <item name="android:background">@drawable/account_two_tab_shape</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="GreenDialogButtonStyle">
+          <item name="android:textColor">@color/white</item>
+          <item name="android:fontFamily">@font/nunito_sans_semibold</item>
+          <item name="android:background">@drawable/login_register_shape_green</item>
+          <item name="android:padding">@dimen/_11sdp</item>
+          <item name="android:textAlignment">center</item>
+          <item name="android:gravity">center</item>
+    </style>
+
+    <style name="WhiteDialogButtonStyle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/nunito_sans_semibold</item>
+        <item name="android:background">@drawable/account_two_tab_shape</item>
+        <item name="android:padding">@dimen/_11sdp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="RedDialogButtonStyle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/nunito_sans_semibold</item>
+        <item name="android:background">@drawable/red_button_shape</item>
+        <item name="android:padding">@dimen/_11sdp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="SignupLoginInputFields">
+        <item name="android:background">@drawable/corner_round_rectangle</item>
+        <item name="android:layout_height">@dimen/_45sdp</item>
+        <item name="android:layout_marginTop">@dimen/_15sdp</item>
+    </style>
+    <style name="Cluster">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/_5sdp</item>
+
+    </style>
+    <style name="SideLeftImageStyle">
+        <item name="android:layout_width">@dimen/_15sdp</item>
+        <item name="android:layout_height">@dimen/_25sdp</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+
+    <style name="DialogStyle" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+    </style>
+
+
+
+    <style name="MapButtonStyle">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/nunito_sans_semibold</item>
+        <item name="android:textSize">@dimen/_11ssp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:gravity">center</item>
+    </style>
+</resources>

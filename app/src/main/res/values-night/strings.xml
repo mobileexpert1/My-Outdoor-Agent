@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">My Outdoor Agent</string>
+    <string name="register">Register</string>
+   <!-- <string name="facebook_app_id">511795909507190</string>
+    <string name="fb_login_protocol_scheme">fb511795909507190</string>-->
+
+
+   <!-- <string name="facebook_app_id">1980376088838740</string>
+    <string name="fb_login_protocol_scheme">fb1980376088838740</string>-->
+
+    <string name="facebook_app_id">731757434802651</string>
+    <string name="fb_login_protocol_scheme">fb731757434802651</string>
+    <string name="facebook_client_token">5016cc825136c840cc3fb67117cb4d97</string>
+
+
+
+
+    <string name="sign_up">Sign Up</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="please_login_to_your_account">Please login to your account</string>
+    <string name="or_login_with">Or Login with</string>
+    <string name="johnsmith154_gmail_com">johnsmith154@gmail.com</string>
+    <string name="stars">**************</string>
+    <string name="create_a_new_account">Create a new account</string>
+    <string name="williams">Williams</string>
+    <string name="smith">Smith</string>
+    <string name="williamsmith154_gmail_com">williamsmith154@gmail.com</string>
+    <string name="i_agree_with_all_terms_conditions"><![CDATA[I Agree with all Terms & conditions]]></string>
+    <string name="enter_your_email_for_the_verification_process">Enter your email for the verification process</string>
+    <string name="forgot_password_">Forgot Password</string>
+    <string name="home">Home</string>
+    <string name="message">Message</string>
+    <string name="search">Search</string>
+    <string name="profile">Profile</string>
+    <string name="william">William</string>
+    <string name="welcome_to_my_outdoor_agent">Welcome to My Outdoor Agent</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="land_owners">Landowner</string>
+    <string name="list_your_land"><b><font color="#FF000000">1. List your land :</font></b> Make it available &amp; searchable to qualified users nationwide</string>
+    <string name="customize"><b><font color="#FF000000">2. Customize :</font></b> Include specific amentities, set lease dates &amp; pricing</string>
+    <string name="manage"><b><font color="#FF000000">3. Manage :</font></b> Confirm reservations, send secure payments online.</string>
+    <string name="adventure_seekers">Adventure Seeker</string>
+    <string name="my_account">My Account</string>
+    <string name="my_licences">My Licences</string>
+    <string name="pre_approval">Pre-Approval</string>
+    <string name="help">Help</string>
+    <string name="account_settings">Account Settings</string>
+    <string name="saved_searches">Saved Searches</string>
+    <string name="log_out">Log Out</string>
+    <string name="choose_responses">Choose\n one of the above responses</string>
+    <string name="looking_for_properties">Looking for properties</string>
+    <string name="leasing_properties">(Leasing properties)</string>
+    <string name="send_reset_link">Send Reset Link</string>
+    <string name="following_information">Complete The Following Information</string>
+    <string name="submit">Submit</string>
+    <string name="list_of_property">List Your Property</string>
+    <string name="Property_List">Property List</string>
+    <string name="hpl_sales">HPL - North Shaser PRE SALES</string>
+    <string name="clark_country">Clark Country, Washington</string>
+    <string name="acres">Acres:</string>
+    <string name="property_licence_terms">Property Licenses Term:</string>
+    <string name="july2022">July 1st, 2022 to June 20th, 2023</string>
+    <string name="fouronefive">0</string>
+    <string name="view_details">View Details</string>
+    <string name="cancel">Cancel</string>
+    <string name="requested_date">Requested date:</string>
+    <string name="firstjuly2022">July 1st, 2022</string>
+    <string name="cass_taxas">Cass, Taxas</string>
+    <string name="nfs_who">NFS - WH0013</string>
+    <string name="lincese_now">Licence Now</string>
+    <string name="dollar_456">$456.00</string>
+    <string name="hpl_north_lic_desc">HPL - North Cascades Non-Motorized Permit\nTest Member Permit</string>
+    <string name="property_details">Details</string>
+    <string name="skagit_country_washinton">Skagit County, Washington</string>
+    <string name="propertyid">Property ID :</string>
+    <string name="hpl_north">HPL - North Cascades</string>
+    <string name="price">Price:</string>
+    <string name="dollaramount_ln">$45,126.00</string>
+    <string name="acres_size">786.00</string>
+    <string name="license_start_date">License Start Date :</string>
+    <string name="licence_date">August 2nd, 2022</string>
+    <string name="license_end_date">License End Date :</string>
+    <string name="licence_end_date2">August 2nd 2023</string>
+    <string name="special_conditions">Special Conditions :</string>
+    <string name="no_trapping">No Trapping.</string>
+    <string name="no_hunting_w_dogs">No Hunting with Dogs.</string>
+    <string name="road_trail">Road/Trail must be left open for public use.</string>
+    <string name="walk_in_access">Walk-in access only</string>
+    <string name="description">Description</string>
+    <string name="description_lengthy">Hampton Family Forests - North Cascades permit area provides a wide spectrum of\n
+        quality outdoor recreation including hunting, fishing, bicycling, hiking, photography,\n
+        sightseeing, and more. The permit area includes 83,617 acres in several large blocks\n
+        of property. </string>
+    <string name="desc_lengthy">Hampton Family Forests - North Cascades permit area provides a wide spectrum of quality outdoor recreation including hunting, fishing, bicycling, hiking, photography, sightseeing, and more. The permit area includes 83,617 acres in several large blocks of property.</string>
+    <string name="amenitities">Amenities</string>
+    <string name="campsites">Campsites (s)</string>
+    <string name="camp_dollar1">$156.00</string>
+    <string name="test_amenity">Test Amenity</string>
+    <string name="cabin">Cabin(s)</string>
+    <string name="propert_attachments">Property Attachments</string>
+    <string name="view_documents">View Documents</string>
+    <string name="request_access">Request Temporary Access</string>
+    <string name="questions">Questions ?</string>
+    <string name="phone_contact">+45 4561239632</string>
+    <string name="time">Timings:</string>
+    <string name="contact_proprty_agent">Contact the Property Agent</string>
+    <string name="eight_pm">8:00 PM - 5:00 AM M-F-EST</string>
+    <string name="similr_prprties">Similar Properties</string>
+    <string name="filter_by">Filter By:</string>
+    <string name="permitts">Permits</string>
+    <string name="rul">RLU</string>
+    <string name="listview">List View</string>
+    <string name="map">Map</string>
+    <string name="save">Save</string>
+    <string name="hpl_permit">HPL - North Cascades Non-Motorized Permit Test Member.</string>
+    <string name="twofiftydollar">$250.45</string>
+    <string name="permit_available">Permit Available 45</string>
+    <string name="purchase">Purchase</string>
+    <string name="faq">Frequently Asked Questions</string>
+    <string name="email">Email</string>
+    <string name="firstname">First Name</string>
+    <string name="lastname">Last Name</string>
+    <string name="password">Password</string>
+    <string name="confirmpassword">Confirm Password</string>
+    <string name="requested">REQUESTED</string>
+    <string name="membership_permit">MEMBERSHIP PERMIT</string>
+    <string name="membership_rlu">MEMBERSHIP RLU</string>
+    <string name="pending_permit">PENDING PERMIT</string>
+    <string name="pending_rlu">PENDING RLU</string>
+    <string name="expired_rlu">EXPIRED RLU</string>
+    <string name="expired_permit">EXPIRED PERMIT</string>
+    <string name="active_rlu">ACTIVE RLU</string>
+    <string name="active_permit">ACTIVE PERMIT</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="account_head_description1">
+        At the top of the website in the right-hand corner, you will see a green button that says “LOGIN/REGISTER”.
+        Click this button. You will now be directed to the login page. There are three choices to create an account.\n
+        1. Click the Facebook icon and sign in by connecting your Facebook account.\n
+        2. Click the Google+ icon and sign in by connecting your Google+ account.\n
+        3. Click “Register”, fill out the form on the page, agree to the Terms of Service and click “Register”\n\n
+        You will receive a verification email after signing up. Your account will NOT be active until
+        you have confirmed your email address by clicking the verification link sent.
+        Can´t find the email? Make sure to check you spam/junk folder from help@myoutdooragent.com.
+    </string>
+    <string name="how_do_i_choose_password">
+    All account passwords must be eight or more characters in length. Following are some tips to help you create a strong password:\n
+    1. Create a password with at least eight characters. Short passwords are easier to guess.\n
+    2. Combine letters, numbers and symbols.\n
+    3. Create a password that is easy for you to remember, but difficult for others to guess. Do not use your log-in name, your spouse’s name or your birthday.\n
+    4. Do not use a password that is hard to remember or must be written down in order to remember.
+    </string>
+    <string name="how_can_i_receive_text_message_mobile_notifications">
+        After creating and verifying your account, log in and click “My Account” in the top right-hand corner.
+        From the drop-down menu, select “Profile”. On the Account Settings section, beside “Enable Mobile Notifications”, you will need to slide the toggle to the right side.
+        A green check mark will appear. You have now enabled mobile notifications.\n
+**Note: You need to update your account setting information to include a mobile number before enabling mobile notifications.
+    </string>
+    <string name="how_do_i_update_my_information">
+        1. Log into your account\n
+        2. Click the dropdown menu under “My Account”\n
+        3. Select “Profile”\n
+        4. Update your information in the boxes provided.
+    </string>
+    <string name="how_do_i_change_my_password">
+        1. Log into your account\n
+        2. Click the dropdown menu under “My Account”\n
+        3. Select “Profile”\n
+        4. In the bottom, right-hand corner, click the red button that says “RESET PASSWORD”\n
+        5. You will receive an email including a link to reset your password.
+    </string>
+
+    <string name="i_have_forgotten_my_password">
+        Have you forgotten your password? No problem. When logging into your account, select “Forgot My Password” in the right-hand corner of the login box. A link will be sent to your email for you to reset your password.
+    </string>
+
+    <string name="what_is_a_property_listing_rlu">
+A Property Listing/Recreational License Unit (RLU) is the term used to identify an individual tract of land that may be licensed by an individual and/or a hunt club for recreational use, such as hunting. The RLU is defined by number of acres, boundaries,
+        license length and other characteristics specific to the tract of land. An individual or hunt club may license more than one RLU.
+    </string>
+
+    <string name="how_can_i_find_available_properties">
+        In the top header, click “SEARCH”. This will direct you to the available Property Listings and dynamic map. You can scroll through the available list of properties on the left-hand side,
+        interact with the dynamic map, or filter your search by clicking “Show Filters”, select your desired filters and click “Apply”.
+    </string>
+
+    <string name="how_do_i_filter_my_search">
+        After navigating to the available Property Listings by clicking “SEARCH” in the top header, you can click filters in the top left-hand corner. A box will appear on the left side of the page with a number of filters for you to select from. After selecting the appropriate filters, click “Apply”.
+        The property listings will then be filtered down to the respective search.
+    </string>
+
+    <string name="can_i_save_my_search">
+        Yes. After selecting the desired filters and clicking “Apply”, You can click the green icon on the right- hand search. This will save your filter to your Account.
+    </string>
+
+    <string name="how_do_i_find_my_saved_searches">
+        Start by logging into your account. Then, click “MY ACCOUNT” in the top, right-hand corner of the page. From the drop-down menu, select “Profile”. On the left-hand side, you will see two tabs. Select “Saved Searches”.
+        On this page, you can view your saved searches or delete previous saved searches you no longer wish to save.
+    </string>
+
+    <string name="how_do_i_navigate_the_map">
+        1. Click and drag the map to explore available Property Listings/Recreational License Units (RLUs).\n
+        2. Click on directional arrows to move the map. Click + to zoom in and – to zoom out.\n
+        3. Mouse over and click a marker to view Property Listing details and to License Now or Request Pre-Approval.\n
+        4. Use the Filters on the left-hand side to help you find the property you want.\n
+        Note: Property Listing boundaries will be displayed on the map when you zoom in.
+    </string>
+
+    <string name="can_my_licence_be_terminated">
+        Generally, at any time during the term, Agent shall have the right upon notice to Member to immediately revoke and terminate the license and the rights and privileges of licensees. For specific terms, see the license agreement.
+    </string>
+
+    <string name="can_i_bring_guests_on_a_property">
+        In order to bring additional guests or members onto the Property Listing/RLU,
+        you will need to add each individual as an Invited Member to that specific property listing.
+        That Invited Member will need to register their own My Outdoor Agent account and accept the license terms the specific Property Listing.
+    </string>
+
+    <string name="what_about_insurance">
+        You will need to review the specific details of your property listing for the exact insurance provided.
+    </string>
+
+    <string name="how_soon_can_i_access_the_property">
+        You may not access the property listing until you have received a notification that your agreement has been legally executed and your license period begins.
+    </string>
+
+    <string name="are_motorized_vehicles_allowed">
+        Please refer to your license agreement for information regarding motorized vehicle use on your Property Listing/RLU.
+    </string>
+
+    <string name="what_is_requested_pre_approval_for_licence">
+        Each Agent has the opportunity to review your application before confirming acceptance for licensing the property.
+    </string>
+
+    <string name="what_happens_after_i_have_been_preapproved_for_property_rlu">
+        Once you have been pre-approved for a property, you will receive a notification by email. This does NOT mean your license has been executed. To execute your license, you will need too:\n
+        1. Log in to your account\n
+        2. Click the drop-down menu under “My Account”\n
+        3. Select “Pre-Approval”\n
+        4. On the RLU/property which has been accepted, click “View Details”\n
+          \t\t \u25CB This will direct you back to the property listing\n
+        5. Click License Now\n
+        6. This will automatically bring your license agreement up – review the license agreement in detail.\n
+        7. After you have reviewed, click “ACCEPT AND BUY NOW”\n
+        8. This will direct you to our secure payment gateway.\n
+           \t\t \u25CB NOTICE: We ONLY accept online payments.\n
+        9. Once your payment has been approved, the license will be active, and a copy of your license agreement will be stored within your account.
+    </string>
+
+    <string name="how_do_i_add_members_to_a_property">
+        After you have executed your license agreement (signed and payed the fee),
+        you will be immediately directed to the license details.
+        On the top right side of the page, you will see a green button that says, “INVITE MEMBERS”.
+        After clicking this button, a pop-up box will appear. To invite new members,
+        type or paste their emails below in the available text area that says, “Enter email ID…”
+    </string>
+
+    <string name="what_information_am_i_required_to_enter_for_invited_members">
+        You will need to provide an email address for your Invited Members when you invite them to an active Property Listing/RLU.
+        Your members will be responsible for creating their own account and entering in their own details and accepting the terms of the license agreement.
+    </string>
+
+    <string name="how_do_i_remove_an_invited_member_from_an_active_property_listing_licence">
+        Invited Members may be deleted from the Property Listing License at any time. The owner of a Property Listing is the only person who can delete members. If you are a Property Listing owner, you can:\n
+        1. Log into your account\n
+        2. Click the dropdown menu under “My Account”\n
+        3. Select “Property License”\n
+        4. For the active property license, you would like to remove a member from, click the green button that says “View Details” under the respective property license.\n
+        5. In the top left-hand corner, you will see a list of your current members.\n
+        6. Select the member you would like to remove and click the red trashcan on the right-hand side of their name under the column “Action”.
+    </string>
+
+    <string name="how_do_i_view_my_licence_agreement">
+        After you have reviewed, accepted the terms and paid your license fees, you will immediately be directed to the license details page. You can click the green button on the top of the page that says “VIEW PROPERTY LICENSE AGREEMENT” to download a copy of your license.
+        Should you want to review your agreement at a later date, you can access this agreement at any time by:\n
+        1. Logging into your account\n
+        2. Click the dropdown menu under “My Account”\n
+        3. Click “Property License”\n
+        4. Select the license you would like to view under “My Active Property Licenses” by clicking the green button “View Details”\n
+        5. Click the green button on the top of the page that says “VIEW PROPERTY LICENSE AGREEMENT”\n
+        6. Read, download or print the Property Listing agreement
+    </string>
+
+    <string name="how_do_i_view_my_active_properties">
+        After logging into “my account”, you will be directed to your account homepage.
+        From there, click on the drop-down menu and click “Licenses”.
+        Active licenses are shown in their respective classes.
+        For example, if you are the owner of a license, this license will be displayed under the box, “My Licenses”.
+        If you are a member of another property, this will be displayed under “My Memberships”.
+    </string>
+
+    <string name="how_do_i_pay_my_licence_fee">
+        After you have been preapproved for a property listing, you will receive an email with further instructions. You will then need to:\n
+        1. Log back into your account\n
+        2. Click the drop-down menu under “My Account”\n
+        3. Click “Pre-Approval”\n
+        4. For the property listings that have been approved, there will be a green box that says “License Now”\n
+        5. Click “View Details” (this will direct your back to the property details page)\n
+        6. Click the green button that says “License Now”\n
+        7. Review the license agreement and scroll to the button\n
+        8. Click “ACCEPT AND BUY NOW”\n
+        9. This will direct you to our online payment platform
+    </string>
+
+    <string name="what_types_of_payments_are_accepted">
+        We accept credit card and ACH payment methods.
+    </string>
+
+    <string name="how_do_i_contact_a_property_agent">
+        To contact a property agent, you first need to select the property for which you have a question regarding.
+        If this not an active license, navigate to the property details page. Scroll down. At the bottom of the page in the right-hand corner,
+        you will see a box that says Property Listing Contact information.Note: not all Agents will list the same contact information.\n
+        If you have already sent a message to a property agent previously, you can (after logging in) navigate to your message center by clicking “Messages” on the top header.
+        This will direct you to your message center and display all previous messages with your property agent.\n
+        If you have a question for an ACTIVE property license, you have can:\n
+        1. Log in to your account\n
+        2. Click “Messages” in the top header\n
+        3. Any Property Listing you have an active Property Listing License for will automatically show up in your message center.
+        You can contact the Property Listing Agent directly here.
+    </string>
+
+    <string name="technical_support">
+        Do you have technical questions regarding using the site? Please fill out our contact us form with your question.
+        One of our team members should be back in touch with you within three (3) to five (5) business days.
+    </string>
+
+
+    <string name="terms_service"><![CDATA[Terms of Service]]></string>
+    <string name="i_agree_to_the">I agree to the</string>
+    <string name="i_agree_to_the_terms_of_service">I agree to the Terms of Service</string>
+    <string name="min">Min</string>
+    <string name="max">Max</string>
+    <string name="save_search">Save Search</string>
+    <string name="current_members">Current Members</string>
+    <string name="invite_members">Invite Members</string>
+    <string name="licence_details">License Details</string>
+    <string name="email1">Email:</string>
+    <string name="property_license_holder">Property License Holder:</string>
+    <string name="property_contact_info">Property Contact Info:</string>
+    <string name="club_name">Club Name:</string>
+    <string name="property_number">Property Number:</string>
+    <string name="property_license_fee">Property License Fee:</string>
+    <string name="no_guidelines_found">No Guidelines Found</string>
+    <string name="property_overview">Property Overview</string>
+    <string name="no_property_description_available">No Property Description Available</string>
+    <string name="activities">Activities</string>
+    <string name="no_activities_available">No Activities Available</string>
+    <string name="amenities">Amenities</string>
+    <string name="no_amenities_available">No amenities available</string>
+    <string name="property_license_agreement">Property License Agreement</string>
+    <string name="club_membership_cards">Club Membership Cards</string>
+    <string name="property_maps">Property Maps</string>
+    <string name="no_maps_available">No Maps Available</string>
+    <string name="want_to_visit_the_property">Want to visit the property?</string>
+    <string name="leave_us_a_message">Leave Us A Message</string>
+    <string name="right_of_entry_request_form">Right of Entry Request Form</string>
+    <string name="no_special_conditions_found">No Special Conditions Found</string>
+    <string name="property_description">Property Description</string>
+    <string name="list_your_land1">
+        <b><font color="#FF000000">1. Find &amp; Reserve:</font></b> Search available properties and land in your area
+        <b><font color="#FF000000">2. Customize:</font></b> Premium leasing options tailored to your specific recreational needs
+        <b><font color="#FF000000">3. Manage:</font></b> Confirm reservations, send secure payments online
+    </string>
+    <string name="vehicle_model">Vehicle Model</string>
+    <string name="vehicle_color">Vehicle Color</string>
+    <string name="vehicle_license_plate">Vehicle License Plate</string>
+    <string name="vehicle_state">Vehicle State</string>
+    <string name="save_changes">Save Changes</string>
+    <string name="select_state">Select State</string>
+    <string name="no_activity_available">No activities available</string>
+    <string name="model">Model</string>
+    <string name="make">Make</string>
+    <string name="color">Color</string>
+    <string name="license_plate">License Plate</string>
+    <string name="add_member">Add Member</string>
+    <string name="you_can_add_multiple_user_emails_separated_by_comma_eg_email1_domain_com_email2_domain_com_so_on"><![CDATA[You can add multiple user emails separated by comma (eg. email1@domain.com, email2@domain.com... & so on)]]></string>
+    <string name="email_address">Email Address</string>
+    <string name="enter_the_email_address_es">Enter the email address(es)</string>
+    <string name="accept_and_pay">Accept and Pay</string>
+    <string name="accptdescription">By clicking Accept and Pay, I agree to the terms and conditions here in.</string>
+    <string name="no_similar_properties_available">No Similar Properties Available</string>
+    <string name="adv1" ><b><font color="#FF000000">1. Find &amp; Reserve:</font></b> Search available properties and land in your area</string>
+    <string name="adv2" ><b><font color="#FF000000">2. Customize:</font></b> Premium leasing options tailored to your specific recreational needs</string>
+    <string name="adv3" ><b><font color="#FF000000">3. Manage:</font></b> Confirm reservations, send secure payments online</string>
+    <string name="sort_by">Sort By</string>
+    <string name="add_members">Add Members</string>
+    <string name="select_county">Select County</string>
+    <string name="sold_out">SOLD OUT</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="my_licenses">My Licenses</string>
+    <string name="thank_you_we_have_received_your_message_someone_from_our_time_will_contact_you_soon">Thank you. We have received your message.someone from our team will contact you soon</string>
+    <string name="name">Name</string>
+    <string name="please_add_the_text_here">Please add the text here</string>
+    <string name="enter_phone_number">Enter Phone Number</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="text_message">Text Message\n xxx-xxx-7456</string>
+    <string name="emails">Email\n a..r@cssoftsolutions.com</string>
+    <string name="we_sent_you_a_verification_code_by_text_message_to_xxx_xxx_7456">We sent you a verification code by text message to</string>
+    <string name="we_sent_you_a_verification_code_by_email">We sent you a verification code by email to</string>
+
+    <string name="resend_code">RESEND CODE</string>
+    <string name="no_document_available">No Document Available</string>
+    <string name="document">Documents</string>
+    <string name="accept_and_join">Accept And Join</string>
+    <string name="cancelrequest">Cancel Request</string>
+    <string name="check_internet_connection_">check internet connection</string>
+    <string name="accept">Accept</string>
+
+    <string-array name="Languages">
+        <item>Java</item>
+        <item>Kotlin</item>
+        <item>Swift</item>
+        <item>Python</item>
+        <item>Scala</item>
+        <item>Perl</item>
+    </string-array>
+    <string-array name="home_select_items">
+        <item>Campsite(s)</item>
+        <item>Cabin(s)</item>
+        <item>Food Plot(s)</item>
+        <item>Utilities</item>
+        <item>Structure(s)</item>
+        <item>Boat Launch</item>
+        <item>Fishing</item>
+        <item>Camping</item>
+    </string-array>
+    <string-array name="sortby_items">
+        <item>New Releases</item>
+        <item>Price: High to Low</item>
+        <item>Price: Low to High</item>
+        <item>Acres: High to Low</item>
+        <item>Acres: Low to High</item>
+    </string-array>
+    <string-array name="select_type">
+        <item>Individual</item>
+        <item>Business</item>
+    </string-array>
+</resources>

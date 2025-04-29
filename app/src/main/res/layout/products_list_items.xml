@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="@dimen/_5sdp"
+    android:paddingHorizontal="@dimen/_20sdp">
+
+    <RelativeLayout
+        android:id="@+id/llProductListItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_bg_color"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/_10ssp"
+        android:paddingVertical="@dimen/_10sdp">
+
+        <TextView
+            android:id="@+id/tvPermit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunito_sans_bold"
+            android:text="Test Permit "
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12ssp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:orientation="horizontal"
+            android:layout_below="@+id/tvPermit"
+            >
+
+            <TextView
+                android:id="@+id/tvDateTime"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+                android:text="07-08-022 (11:00PM)"
+                android:textColor="@color/property_text_grey"
+                android:textSize="@dimen/_10ssp" />
+
+            <!--  <TextView
+                android:id="@+id/timeTV"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text=" (11:00PM)"
+                android:textColor="@color/property_text_grey"
+                android:textSize="@dimen/_10ssp" />-->
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tvCounter"
+            android:layout_width="@dimen/_22sdp"
+            android:layout_height="@dimen/_22sdp"
+            android:text="2"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/count_drawable"
+            android:visibility="gone"
+            />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

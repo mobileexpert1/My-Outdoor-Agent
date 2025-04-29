@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/LLinvoiceType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtinvoicetype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_6sdp"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:text="Invoice Type"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_11ssp" />
+
+            <TextView
+                android:id="@+id/tvInvoiceType"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_toRightOf="@+id/txtinvoicetype"
+                android:ellipsize="marquee"
+                android:fontFamily="@font/nunito_sans_regular"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/_9ssp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LLAmonut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/LLinvoiceType"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/txtAmonut"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_weight="0.4"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:text="Amount              "
+                android:textColor="@color/black"
+                android:textSize="@dimen/_11ssp" />
+
+            <TextView
+                android:id="@+id/tvAmountInvoice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_toRightOf="@+id/txtinvoicetype"
+                android:layout_weight="1.5"
+                android:fontFamily="@font/nunito_sans_regular"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:paddingStart="@dimen/_10sdp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/_9ssp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LLstatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp">
+
+            <TextView
+                android:id="@+id/tvStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:text="Status           "
+                android:textColor="@color/black"
+                android:textSize="@dimen/_11ssp" />
+
+
+            <TextView
+                android:id="@+id/tvPayNowInvoice"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginStart="@dimen/_3sdp"
+                android:layout_marginRight="@dimen/_9sdp"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:paddingVertical="@dimen/_3sdp"
+                android:singleLine="true"
+                android:text="Paid"
+                android:textColor="@color/green_border_button_color"
+                android:textSize="@dimen/_9ssp" />
+
+            <!--<TextView
+                android:id="@+id/tvPayNowInvoice"
+                style="@style/RoundCornerGreenButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_9sdp"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:paddingVertical="@dimen/_3sdp"
+                android:singleLine="true"
+                android:text="Pay Now"
+                android:textColor="@color/light_white_green"
+                android:textSize="@dimen/_9ssp" />-->
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvMapsListItem"
+        style="@style/RoundCornerGreyButtonStyle"
+        android:background="@color/my_account_tab_grey"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="@dimen/_10sdp"
+        android:textAlignment="center"
+        android:paddingVertical="@dimen/_3sdp"
+        android:fontFamily="@font/nunito_sans_semibold"
+        android:singleLine="true"
+        android:text="sfkhskfhksj"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_8ssp"
+        android:layout_marginVertical="@dimen/_5sdp"/>
+
+</LinearLayout>

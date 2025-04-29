@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/profile_grey"
+    tools:context=".fragment.HelpFragment">
+
+    <include
+        android:id="@+id/ilToolbar"
+        layout="@layout/toolbar" />
+
+<ScrollView
+    android:layout_below="@+id/ilToolbar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ilToolbar"
+        android:background="@color/profile_grey"
+        android:orientation="vertical"
+        android:padding="@dimen/_15sdp">
+
+        <TextView
+            style="@style/LargeBlackTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_18sdp"
+            android:textSize="@dimen/_12ssp"
+            android:gravity="center"
+            android:text="@string/choose_responses" />
+
+        <LinearLayout
+            android:id="@+id/llHelpAdventureSeeker"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_130sdp"
+            android:layout_below="@+id/llSearchHome"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@drawable/corner_round_rectangle"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_weight="4"
+                android:background="@drawable/corner_round_rectangle"
+                android:clipToOutline="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/layer_1" />
+
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_weight="4"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvAdventureSeeker"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/nunito_sans_extrabold"
+                    android:gravity="center_horizontal"
+                    android:text="@string/adventure_seekers"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_11ssp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvAdventureSeeker"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/nunito_sans_bold"
+                    android:gravity="center_horizontal"
+                    android:text="@string/looking_for_properties"
+                    android:textColor="@color/home_screen_grey"
+                    android:textSize="@dimen/_7ssp" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/llHelpLandOwners"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_130sdp"
+            android:layout_below="@+id/llSearchHome"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:background="@drawable/corner_round_rectangle"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_weight="4"
+                android:background="@drawable/corner_round_rectangle"
+                android:clipToOutline="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/layer_4" />
+
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_weight="4"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvLandOwner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/nunito_sans_extrabold"
+                    android:gravity="center_horizontal"
+                    android:text="@string/land_owners"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_11ssp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvLandOwner"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/nunito_sans_bold"
+                    android:gravity="center_horizontal"
+                    android:text="@string/leasing_properties"
+                    android:textColor="@color/home_screen_grey"
+                    android:textSize="@dimen/_7ssp" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>
+
+
+</RelativeLayout>

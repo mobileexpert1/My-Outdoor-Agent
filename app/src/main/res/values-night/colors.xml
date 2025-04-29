@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="light_grey">#B1B1B1</color>
+    <color name="light_white_green">#F4FBF8</color>
+    <color name="greylr">#ADADAD</color>
+    <color name="darkgrey" tools:ignore="MissingDefaultResource">#767676</color>
+    <color name="green">#2BB674</color>
+    <color name="home_green">#2CB775</color>
+    <color name="home_screen_grey">#808080</color>
+    <color name="profile_background_grey">#ECECEC</color>
+    <color name="profile_grey">#F9F9F9</color>
+    <color name="my_account_tab_grey">#E5E5E5</color>
+    <color name="account_tab_grey_text">#898989</color>
+    <color name="green_border_button_color">#29B170</color>
+    <color name="red_pre_approval">#F82323</color>
+    <color name="property_light_white_green">#F3FBF7</color>
+    <color name="property_text_grey">#919191</color>
+    <color name="royal_red">#DC3545</color>
+    <color name="light_red">#FFCDD2</color>  <!-- Disabled color -->
+    <color name="solid_red">#F44336</color>  <!-- Enabled color -->
+</resources>

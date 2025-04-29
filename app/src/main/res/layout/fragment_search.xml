@@ -1,0 +1,519 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentScrollview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:fillViewport="true"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    android:scrollbarStyle="outsideOverlay"
+    android:scrollbars="none"
+    tools:context=".fragment.search.SearchFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/profile_grey"
+        android:backgroundTint="@color/profile_grey"
+        android:fitsSystemWindows="true">
+
+        <ImageView
+            android:id="@+id/imvGreeneffect"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_80sdp"
+            android:scaleType="fitXY"
+            android:src="@drawable/green_rect_search_b" />
+
+        <LinearLayout
+            android:id="@+id/llSearchAndFilter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:orientation="vertical"
+            app:layout_collapseMode="parallax">
+
+            <LinearLayout
+                android:id="@+id/linearTop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_9sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/llSearch"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_weight="7"
+                    android:background="@drawable/white_border_shape"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:orientation="vertical">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/autoTextView"
+                            style="@style/RectangleSimpleBorderEdittextLayoutStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:gravity="center_vertical"
+                            android:hint="Search"
+                            android:inputType="text"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_11ssp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llHomeSearch"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:layout_weight="1.2"
+                        android:gravity="right"
+                        android:paddingVertical="@dimen/_9sdp">
+
+                        <ImageView
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="@dimen/_12sdp"
+                            android:layout_gravity="right|center_vertical"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_search" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/llToggle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/imvToggle"
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:src="@drawable/toggle_map">
+
+                        </ImageView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/_2sdp"
+                    android:layout_toRightOf="@+id/llSearch"
+                    android:layout_weight="1"
+                    android:background="@drawable/white_border_shape"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:id="@+id/lldropdown"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:paddingHorizontal="@dimen/_3sdp"
+                        android:paddingVertical="@dimen/_9sdp">
+
+                        <ImageView
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="@dimen/_12sdp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/dropdown_arrow" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llFilterSearch"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/_4sdp"
+                    android:layout_toRightOf="@+id/llSearch"
+                    android:layout_weight="1"
+                    android:background="@drawable/white_border_shape"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:paddingHorizontal="@dimen/_3sdp"
+                        android:paddingVertical="@dimen/_9sdp">
+
+                        <ImageView
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="@dimen/_12sdp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_filter" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_9sdp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <com.skydoves.powerspinner.PowerSpinnerView
+                    android:id="@+id/psSelectState_Search"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_9sdp"
+                    android:layout_marginRight="@dimen/_2sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/green_border_shape"
+                    android:gravity="left|center_vertical"
+                    android:hint="Select State"
+                    android:padding="@dimen/_10sdp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/greylr"
+                    android:textSize="@dimen/_11ssp"
+                    app:spinner_arrow_gravity="end"
+                    app:spinner_arrow_tint="@color/green"
+                    app:spinner_divider_show="true"
+                    app:spinner_divider_size="0.4dp"
+                    app:spinner_item_array="@array/home_select_items"
+                    app:spinner_popup_animation="dropdown"
+                    app:spinner_popup_background="@color/white"
+                    app:spinner_popup_elevation="@dimen/_14sdp" />
+
+                <com.skydoves.powerspinner.PowerSpinnerView
+                    android:id="@+id/pvSortBy"
+                    style="@style/RectangleSimpleBorderEdittextLayoutStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_2sdp"
+                    android:layout_marginRight="@dimen/_9sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/green_border_shape"
+                    android:gravity="left|center_vertical"
+                    android:hint="@string/sort_by"
+                    android:padding="@dimen/_10sdp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/greylr"
+                    android:textSize="@dimen/_11ssp"
+                    app:spinner_arrow_gravity="end"
+                    app:spinner_arrow_tint="@color/green"
+                    app:spinner_divider_show="true"
+                    app:spinner_divider_size="0.4dp"
+                    app:spinner_item_array="@array/sortby_items"
+                    app:spinner_popup_animation="dropdown"
+                    app:spinner_popup_background="@color/white"
+                    app:spinner_popup_elevation="@dimen/_14sdp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_9sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/green_border_shape"
+                android:orientation="horizontal"
+                android:paddingVertical="@dimen/_2sdp"
+                android:visibility="gone">
+                <!--  <org.angmarch.views.NiceSpinner
+                                    android:id="@+id/psCountySpinner"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:drawablePadding="@dimen/_25sdp"
+                                    android:gravity="left"
+                                    android:hint="@string/select_county"
+                                    android:padding="0dp"
+                                    android:textSize="@dimen/_12ssp"
+                                    app:arrowDrawable="@drawable/ic_green_dropdown"
+                                    app:arrowTint="@color/green"
+                                    app:popupTextAlignment="start" /> -->
+                <com.skydoves.powerspinner.PowerSpinnerView
+                    android:id="@+id/psCounty_Spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="left|center_vertical"
+                    android:hint="Select County"
+                    android:padding="@dimen/_10sdp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/greylr"
+                    android:textSize="@dimen/_11ssp"
+                    app:spinner_arrow_gravity="end"
+                    app:spinner_arrow_tint="@color/green"
+                    app:spinner_divider_show="true"
+                    app:spinner_divider_size="0.4dp"
+                    app:spinner_popup_animation="dropdown"
+                    app:spinner_popup_background="@color/white"
+                    app:spinner_popup_elevation="@dimen/_14sdp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/_9sdp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/llFilter"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_37sdp"
+                    android:background="@drawable/white_border_shape"
+                    android:elevation="1dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/_11sdp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:gravity="left|center_vertical"
+                        android:text="@string/filter_by"
+                        android:textColor="@color/greylr"
+                        android:textSize="@dimen/_12ssp" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:gravity="right">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+                            <!--  <CheckBox
+                                                            android:id="@+id/cbPermits"
+                                                            android:layout_width="0dp"
+                                                            android:layout_height="match_parent"
+                                                            android:layout_weight="1"
+                                                            android:buttonTint="@color/green" />
+                             -->
+                            <CheckBox
+                                android:id="@+id/cbPermits"
+                                android:layout_width="@dimen/_15sdp"
+                                android:layout_height="@dimen/_15sdp"
+                                android:layout_gravity="center"
+                                android:layout_marginHorizontal="@dimen/_10sdp"
+                                android:layout_marginVertical="@dimen/_10sdp"
+                                android:background="@drawable/checkbox"
+                                android:button="@null"
+                                android:clickable="true"
+                                android:focusable="true" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="3"
+                                android:gravity="left|center_vertical"
+                                android:text="@string/permitts"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_11ssp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+                            <!--    <CheckBox
+                                                            android:id="@+id/cbRul"
+                                                            android:layout_width="0dp"
+                                                            android:layout_height="match_parent"
+                                                            android:layout_weight="1"
+                                                            android:buttonTint="@color/green" /> -->
+                            <CheckBox
+                                android:id="@+id/cbRul"
+                                android:layout_width="@dimen/_15sdp"
+                                android:layout_height="@dimen/_15sdp"
+                                android:layout_gravity="center"
+                                android:layout_marginHorizontal="@dimen/_10sdp"
+                                android:layout_marginVertical="@dimen/_10sdp"
+                                android:background="@drawable/checkbox"
+                                android:button="@null"
+                                android:clickable="true"
+                                android:focusable="true" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="3"
+                                android:gravity="left|center_vertical"
+                                android:text="@string/rul"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_11ssp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imvGreeneffect"
+            android:background="@color/white"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/llListViewAndMapTabs"
+                style="@style/TabsButtonShapeGrey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/clMain"
+                android:layout_margin="@dimen/_9sdp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/tvListView"
+                    style="@style/RoundCornerGreenAccountButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/listview" />
+
+                <TextView
+                    android:id="@+id/tvMap"
+                    style="@style/RoundCornerGreyAccountButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/map"
+                    android:textColor="@color/black"
+                    android:textStyle="" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llListViewLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/linearListView"
+            android:layout_marginHorizontal="@dimen/_9sdp"
+            android:layout_marginTop="@dimen/_9sdp"
+            android:orientation="vertical">
+
+            <!--            <GridView-->
+            <!--                android:id="@+id/gv_SearchListView"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="match_parent"-->
+            <!--                android:fadeScrollbars="false"-->
+            <!--                android:gravity="center"-->
+            <!--                android:horizontalSpacing="@dimen/_10sdp"-->
+            <!--                android:numColumns="2"-->
+            <!--                android:scrollbarThumbHorizontal="@null"-->
+            <!--                android:scrollbarThumbVertical="@null"-->
+            <!--                android:scrollbars="none"-->
+            <!--                android:visibility="visible"-->
+            <!--                tools:listitem="@layout/permit_grid_item"-->
+            <!--                android:nestedScrollingEnabled="false"-->
+            <!--                />-->
+
+            <LinearLayout
+                android:id="@+id/llResetfilterlayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/ivResetFilters"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/_60sdp"
+                    android:background="@drawable/ic_icon_refresh_" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_sans_semibold"
+                    android:gravity="center"
+                    android:text="Reset filters and reload page"
+                    android:textSize="@dimen/_12ssp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/linearListView"
+            android:layout_marginHorizontal="@dimen/_9sdp"
+            android:layout_marginTop="@dimen/_9sdp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/gv_SearchListView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+            <!-- <GridView
+                 android:id="@+id/gv_SearchListView"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:fadeScrollbars="false"
+                 android:gravity="center"
+                 android:horizontalSpacing="@dimen/_10sdp"
+                 android:numColumns="2"
+                 android:scrollbarThumbHorizontal="@null"
+                 android:scrollbarThumbVertical="@null"
+                 android:scrollbars="none"
+                 android:visibility="visible"
+                 tools:listitem="@layout/permit_grid_item"
+                 android:nestedScrollingEnabled="false"
+                 />-->
+
+
+            <include
+                android:id="@+id/ilMapView"
+                layout="@layout/fragment_map_view"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/searchContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/linearListView"
+            android:visibility="gone" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvSearchItems"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llSearchAndFilter"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_1sdp"
+            android:layout_marginEnd="@dimen/_50sdp"
+            android:background="@color/white"
+            android:visibility="gone" />
+
+
+        <ProgressBar
+            android:id="@+id/progressSBar"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:indeterminate="true"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

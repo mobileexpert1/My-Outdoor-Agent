@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/ilToolbar"
+        layout="@layout/toolbar" />
+
+    <TextView
+        android:id="@+id/tvForgotPassword"
+        style="@style/LargeBoldBlackTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:gravity="center"
+        android:text="Get Verification Code" />
+
+
+    <TextView
+        android:id="@+id/tvDesc"
+        style="@style/SmallGreyTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvForgotPassword"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:gravity="left"
+        android:padding="@dimen/_10sdp"
+        android:text="For added security, we'll send you a one time code. Choose how to receive your code:"
+        android:textSize="@dimen/_10ssp"
+        android:visibility="visible" />
+
+    <RadioGroup
+        android:id="@+id/rgStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvDesc"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/_20sdp"
+        android:weightSum="2">
+
+        <RadioButton
+            android:id="@+id/rbTextMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:buttonTint="@color/black"
+            android:text="@string/text_message"
+            android:textColor="@color/black" />
+
+        <RadioButton
+            android:id="@+id/rbEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:buttonTint="@color/black"
+            android:text="@string/emails"
+            android:textColor="@color/black" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvContinue"
+        style="@style/RoundCornerGreenLoginButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/_9sdp"
+        android:layout_marginTop="@dimen/_9sdp"
+        android:layout_marginEnd="@dimen/_9sdp"
+        android:layout_marginBottom="@dimen/_9sdp"
+        android:padding="@dimen/_13sdp"
+        android:text="@string/contiune" />
+
+</RelativeLayout>

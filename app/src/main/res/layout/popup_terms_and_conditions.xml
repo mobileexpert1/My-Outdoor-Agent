@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingVertical="@dimen/_5sdp"
+    android:paddingHorizontal="@dimen/_30sdp">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_390sdp"
+        android:layout_centerInParent="true" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/corner_round_rectangle"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <WebView
+                android:id="@+id/wvShowTermsAndConditions"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="10"
+                android:gravity="center" />
+            <TextView
+                android:id="@+id/tvIAgree"
+                android:background="@color/green"
+                android:textColor="@color/white"
+                android:fontFamily="@font/nunito_sans_semibold"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:textSize="@dimen/_12ssp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/i_agree_to_the_terms_of_service" />
+            <!---add your views here-->
+        </LinearLayout>
+
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/ivClose"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_gravity="top|right"
+            android:clickable="true"
+            android:src="@drawable/ic_terms_cancel" />
+
+    </FrameLayout>
+
+<!--
+    <RelativeLayout
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_390sdp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="-15dp"
+            android:layout_marginRight="-15dp"
+            android:src="@drawable/ic_terms_cancel" />
+        <WebView
+            android:id="@+id/wvShowTermsAndConditions"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/corner_round_rectangle"
+            android:gravity="center" />
+
+
+    </RelativeLayout>
+-->
+
+</RelativeLayout>

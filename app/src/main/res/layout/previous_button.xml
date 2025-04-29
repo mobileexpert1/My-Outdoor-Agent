@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:paddingVertical="@dimen/_7sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:weightSum="2"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tvClosePrevious"
+            style="@style/WhiteDialogButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/_8sdp"
+            android:clipToOutline="true"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:text="@string/close"
+            android:textColor="@color/account_tab_grey_text"
+            android:textStyle="" />
+        <TextView
+            android:id="@+id/tvContinue"
+            style="@style/GreenDialogButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_8sdp"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:textSize="@dimen/_9ssp"
+            android:background="@drawable/login_register_shape_green"
+            android:gravity="center"
+            android:text="@string/contiune" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_220sdp"
+    android:background="@null"
+    android:layout_margin="@dimen/_3sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/llHomeScreenGridItem"
+        android:layout_width="match_parent"
+        android:background="@null"
+        android:layout_height="@dimen/_220sdp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_180sdp"
+            android:layout_below="@+id/llSearchHome"
+            android:elevation="0.5dp"
+            android:padding="@dimen/_6sdp"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:background="@drawable/corner_round_rectangle"
+            android:orientation="vertical">
+
+
+            <FrameLayout
+                android:id="@+id/image_logo"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_120sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/ivImageData"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_120sdp"
+                    android:layout_weight="4"
+                    android:background="@drawable/corner_round_rectangle"
+                    android:clipToOutline="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/tents" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_camera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </FrameLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:layout_weight="4"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvDisplayName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/nunito_sans_semibold"
+                    android:gravity="left"
+                    android:maxLines="2"
+                    android:minLines="2"
+                    android:text="@string/cass_taxas"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_9ssp" />
+
+                <TextView
+                    android:id="@+id/tvLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvDisplayName"
+                    android:ellipsize="end"
+                    android:layout_marginTop="-5dp"
+                    android:fontFamily="@font/nunito_sans_semibold"
+                    android:text="@string/nfs_who"
+                    android:textColor="@color/home_screen_grey"
+                    android:textSize="@dimen/_9ssp" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlViewDetails"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_below="@+id/llSearchHome">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/green_button_shape"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:gravity="center"
+                android:text="@string/view_details"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_9ssp" />
+<!--
+<TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/green_border_shape"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:gravity="center"
+                android:text="@string/view_details"
+                android:textColor="@color/green_border_button_color"
+                android:textSize="@dimen/_9ssp" />
+-->
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

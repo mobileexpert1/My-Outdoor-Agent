@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llTitleRenewal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tvTitleRenewal"
+            android:background="@color/green"
+            android:textColor="@color/white"
+            android:fontFamily="@font/nunito_sans_semibold"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_33sdp"
+            android:textSize="@dimen/_11ssp"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/license_renewal" />
+
+    </LinearLayout>
+
+
+    <include
+        android:id="@+id/renewalShape"
+        layout="@layout/license_renewel_shape"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <include
+                android:id="@+id/layout_harvest_information"
+                layout="@layout/layout_harvesting_information"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                />
+
+            <include
+                android:id="@+id/layout_previous_member"
+                layout="@layout/layout_previous_member"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                />
+
+
+            <include
+                android:id="@+id/harvest_information_Button"
+                layout="@layout/harvesting_infomation_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                />
+            <include
+                android:id="@+id/harvest_previous_Button"
+                layout="@layout/previous_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>

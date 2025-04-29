@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_275sdp"
+    android:layout_height="@dimen/_340sdp"
+    android:background="@color/profile_grey"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/llPreApprovalGridItem"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/llPreApprovalClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llSearchHome"
+            android:padding="@dimen/_6sdp"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:background="@drawable/corner_round_rectangle"
+            android:orientation="vertical">
+
+
+            <FrameLayout
+                android:id="@+id/image_logo"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_90sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:clipToOutline="true"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/iv_ReqstAccpt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:background="@drawable/corner_round_rectangle"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/layer_3" />
+
+                <!--<androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_camera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="@dimen/_30sdp"
+                    app:srcCompat="@drawable/ic_yellow_tie" />-->
+                <TextView
+                    android:id="@+id/tvRequested"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_10ssp"
+                    android:elevation="@dimen/_1sdp"
+                    android:fontFamily="@font/nunito_sans_bold"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_2sdp"
+                    android:layout_gravity="left"
+                    android:text="@string/requested"
+                    android:layout_marginRight="@dimen/_30sdp"
+                    android:background="@drawable/ic_blue_tile"/><!--  <TextView
+                    android:id="@+id/tvRequested"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_10ssp"
+                    android:elevation="@dimen/_1sdp"
+                    android:fontFamily="@font/nunito_sans_bold"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_2sdp"
+                    android:layout_gravity="left"
+                    android:text="@string/requested"
+                    android:layout_marginRight="@dimen/_30sdp"
+                    android:background="@drawable/ic_yellow_tie"/>-->
+                <TextView
+                    android:id="@+id/tvAccepted"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_10ssp"
+                    android:elevation="@dimen/_1sdp"
+                    android:fontFamily="@font/nunito_sans_bold"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_2sdp"
+                    android:layout_gravity="left"
+                    android:text="ACCEPTED"
+                    android:layout_marginRight="@dimen/_30sdp"
+                    android:background="@drawable/ic_yellow_tie"/><!--  <TextView
+                    android:id="@+id/tvAccepted"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_10ssp"
+                    android:elevation="@dimen/_1sdp"
+                    android:fontFamily="@font/nunito_sans_bold"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_2sdp"
+                    android:layout_gravity="left"
+                    android:text="ACCEPTED"
+                    android:layout_marginRight="@dimen/_30sdp"
+                    android:background="@drawable/ic_green_tie"/>-->
+
+            </FrameLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:layout_weight="4"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvDisplayName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_sans_semibold"
+                    android:gravity="left"
+                    android:text="@string/hpl_sales"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_8ssp" />
+
+
+                <TextView
+                    android:id="@+id/tvStateNameCountyName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvDisplayName"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/nunito_sans_semibold"
+                    android:text="@string/clark_country"
+                    android:textColor="@color/home_screen_grey"
+                    android:textSize="@dimen/_7ssp" />
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/_8sdp">
+
+                <LinearLayout
+                    android:id="@+id/llLicencesTerms"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_alignParentLeft="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvAdventureSeeker"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:gravity="left"
+                        android:text="@string/property_licenses_term_"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_8ssp" />
+
+
+                    <TextView
+                        android:id="@+id/tvLicenseStartDateToEndDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvAdventureSeeker"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:text="@string/july2022"
+                        android:textColor="@color/home_screen_grey"
+                        android:textSize="@dimen/_7ssp" />
+
+                    <!-- <TextView
+                        android:id="@+id/tvLicenseStartDateToEndDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvAdventureSeeker"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:maxLines="2"
+                        android:text="@string/july2022"
+                        android:textColor="@color/home_screen_grey"
+                        android:textSize="@dimen/_7ssp" />-->
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_weight="1"
+                    android:layout_toRightOf="@+id/llLicencesTerms"
+                    android:gravity="right"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:gravity="right"
+                        android:paddingRight="@dimen/_2sdp"
+                        android:text="@string/acres"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_8ssp" />
+
+
+                    <TextView
+                        android:id="@+id/tvAcres"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="@dimen/_2sdp"
+                        android:layout_below="@+id/tvAdventureSeeker"
+                        android:gravity="right"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:text="@string/fouronefive"
+                        android:textColor="@color/home_screen_grey"
+                        android:textSize="@dimen/_7ssp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_8sdp">
+
+                <LinearLayout
+                    android:id="@+id/llRequestedDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvRequestedDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:gravity="left"
+                        android:text="@string/requested_date"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_8ssp" />
+
+
+                    <TextView
+                        android:id="@+id/tvRequestedDateSubmitted"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvAdventureSeeker"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:text="@string/firstjuly2022"
+                        android:textColor="@color/home_screen_grey"
+                        android:textSize="@dimen/_7ssp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/llCancelRequest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llSearchHome"
+            android:background="@drawable/red_button_shape"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:orientation="horizontal">
+            <TextView
+                android:textSize="@dimen/_9ssp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_9sdp"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:gravity="center"
+                android:text="@string/cancelrequest"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <!-- <LinearLayout
+            android:id="@+id/llCancelRequest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llSearchHome"
+            android:background="@drawable/red_border_shape"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:orientation="horizontal">
+            <TextView
+                android:textSize="@dimen/_9ssp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_9sdp"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:gravity="center"
+                android:text="@string/cancel"
+                android:textColor="@color/red_pre_approval" />
+
+        </LinearLayout>-->
+
+
+        <LinearLayout
+            android:id="@+id/llViewDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llSearchHome"
+            android:visibility="gone"
+            android:background="@drawable/green_button_shape"
+            android:orientation="horizontal">
+            <TextView
+                android:textSize="@dimen/_9ssp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_9sdp"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:gravity="center"
+                android:text="@string/view_details"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+        <!-- <LinearLayout
+            android:id="@+id/llViewDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llSearchHome"
+            android:visibility="visible"
+            android:background="@drawable/green_border_shape"
+            android:orientation="horizontal">
+            <TextView
+                android:textSize="@dimen/_9ssp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_11sdp"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:gravity="center"
+                android:text="@string/view_details"
+                android:textColor="@color/green_border_button_color" />
+
+        </LinearLayout>-->
+    </LinearLayout>
+
+</LinearLayout>

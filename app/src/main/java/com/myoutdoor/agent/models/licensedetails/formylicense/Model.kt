@@ -1,0 +1,30 @@
+package com.myoutdoor.agent.models.licensedetails.formylicense
+
+data class Model(
+    var acceptedBy: Any,
+    var acceptedDate: String,
+    var activityType: Any,
+    var additionalInvoices: List<Any>,
+    var amenities: List<Amenity>,
+    var clientFeatures: ClientFeatures,
+    var clubMemberDetails: List<ClubMemberDetail>,
+    var contractFiscalYear: Int,
+    var contractStatus: Any,
+    var executedBy: Any,
+    var executedDate: String,
+    var licenseAcres: Double,
+    var licenseAgreement: String,
+    var licenseContractID: Int,
+    var licenseDetails: LicenseDetails,
+    var licenseMembers: List<LicenseMember>,
+    var licenseStatus: Any,
+    var licenseType: Any,
+    var mapFiles: List<MapFile>,
+    var memberDetailsModel: MemberDetailsModel,
+    var productID: Int,
+    var productNo: Any,
+    var publicKey: Any,
+    var renewalActivity: RenewalActivity,
+    var specialConditions: List<SpecialCondition>,
+    var vehicleDetails: List<Any>
+)

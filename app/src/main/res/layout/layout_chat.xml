@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <TextView
+        android:id="@+id/senderTV"
+        android:layout_width="190dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/receiverTimeTV"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="3dp"
+        android:background="@drawable/blue_background_chat"
+        android:elevation="5dp"
+        android:gravity="left|center"
+        android:padding="10dp"
+        android:paddingStart="15dp"
+        android:text="@string/list_of_property"
+        android:textColor="@color/white"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/sendTimeTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/senderTV"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:gravity="left|center"
+        android:text="8:58AM"
+        android:textColor="@color/black"
+        android:textSize="10dp" />
+
+    <TextView
+        android:id="@+id/receiverTV"
+        android:layout_width="190dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/white_background_chat"
+        android:elevation="5dp"
+        android:padding="10dp"
+        android:text="@string/list_of_property"
+        android:textColor="@color/black"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/receiverTimeTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/receiverTV"
+        android:layout_marginLeft="20dp"
+        android:gravity="left|center"
+        android:text="8:58AM"
+        android:textColor="@color/black"
+        android:textSize="10dp" />
+</RelativeLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.BasicPlan.BasicPlanActivity">
+
+    <include
+        android:id="@+id/ilToolbar"
+        layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:id="@+id/linearTop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_below="@+id/ilToolbar"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvBasicPlan"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="@dimen/_3sdp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Basic Plan "
+            />
+
+        <TextView
+            android:id="@+id/tvProPlan"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="@dimen/_3sdp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Pro Plan"
+            />
+
+        <TextView
+            android:id="@+id/tvEnterpricePlan"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="@dimen/_3sdp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Enterprice Plan"
+            />
+    </LinearLayout>
+
+
+
+    <FrameLayout
+        android:layout_below="@+id/linearTop"
+        android:id="@+id/FLBasiccontainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+
+
+</RelativeLayout>

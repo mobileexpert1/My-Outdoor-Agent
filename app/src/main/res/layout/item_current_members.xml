@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linearTop"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_5sdp"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:background="@drawable/grey_border_rectangle"
+    android:orientation="horizontal">
+
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="@dimen/_9ssp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/nunito_sans_bold"
+        />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        app:layout_constraintStart_toEndOf="@+id/txtName"
+        app:layout_constraintTop_toTopOf="@+id/txtName"
+        app:layout_constraintBottom_toBottomOf="@+id/txtName"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:textSize="@dimen/_9ssp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/nunito_sans_regular"
+        />
+
+    <TextView
+        android:id="@+id/txtEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtName"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_9ssp"
+        android:fontFamily="@font/nunito_sans_bold"
+        android:layout_marginTop="@dimen/_2sdp"
+        />
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:textSize="@dimen/_9ssp"
+        android:marqueeRepeatLimit="marquee_forever"
+        app:layout_constraintStart_toStartOf="@+id/tvName"
+        app:layout_constraintTop_toTopOf="@+id/txtEmail"
+        app:layout_constraintBottom_toBottomOf="@+id/txtEmail"
+        android:textColor="@color/black"
+        android:fontFamily="@font/nunito_sans_regular"
+        />
+
+    <TextView
+        android:id="@+id/txtPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone"
+        android:textSize="@dimen/_9ssp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEmail"
+        android:textColor="@color/black"
+        android:fontFamily="@font/nunito_sans_bold"
+        android:layout_marginTop="@dimen/_2sdp"
+        />
+
+    <TextView
+        android:id="@+id/tvPhone"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="@dimen/_9ssp"
+        android:ellipsize="marquee"
+        android:paddingVertical="@dimen/_1sdp"
+        android:marqueeRepeatLimit="marquee_forever"
+        app:layout_constraintStart_toStartOf="@+id/tvName"
+        app:layout_constraintTop_toTopOf="@+id/txtPhone"
+        app:layout_constraintBottom_toBottomOf="@+id/txtPhone"
+        android:textColor="@color/black"
+        android:fontFamily="@font/nunito_sans_regular"
+        />
+
+    <TextView
+        android:id="@+id/tvMember"
+        style="@style/RoundCornerGreenButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="@dimen/_10sdp"
+        android:paddingVertical="@dimen/_3sdp"
+        android:singleLine="true"
+        android:text="Member"
+        android:textColor="@color/light_white_green"
+        android:textSize="@dimen/_9ssp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPhone"
+        android:layout_marginTop="@dimen/_8sdp"
+        />
+
+    <TextView
+        android:id="@+id/tvInvite"
+        style="@style/RoundCornerGreyButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="@dimen/_10sdp"
+        android:paddingVertical="@dimen/_3sdp"
+        android:singleLine="true"
+        android:text="Invited"
+        android:textColor="@color/light_white_green"
+        android:textSize="@dimen/_9ssp"
+        app:layout_constraintStart_toEndOf="@+id/tvMember"
+        app:layout_constraintTop_toBottomOf="@+id/txtPhone"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        />
+
+    <ImageView
+        android:id="@+id/ivDeleteAddMember"
+        style="@style/SideLeftImageStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_30sdp"
+        android:src="@drawable/ic_delete"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="@dimen/_5sdp"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

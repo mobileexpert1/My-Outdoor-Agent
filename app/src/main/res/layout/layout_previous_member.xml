@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="@dimen/_5sdp"
+    android:layout_marginRight="@dimen/_5sdp"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+
+    <LinearLayout
+        android:id="@+id/llinfoMember"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@color/green"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:weightSum="3"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13sdp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Name">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_weight="1"
+            android:text="Email"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13sdp"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+        </TextView>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_weight ="1"
+            android:textColor="@color/white"
+            android:text="Phone"
+            android:textSize="@dimen/_13sdp"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+        </TextView>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@+id/llinfoMember"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/llpreviousMmber"
+                android:layout_below="@+id/renewalShape"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_200sdp"
+                android:orientation="vertical">
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvPreviousMembers"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_200sdp"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:visibility="visible"
+                    />
+
+                <TextView
+                    android:id="@+id/tvPreviousMembers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/previous_member_text"
+                    android:textSize="@dimen/_10sdp"
+                    android:visibility="gone">
+
+                </TextView>
+            </RelativeLayout>
+        </LinearLayout>
+</RelativeLayout>

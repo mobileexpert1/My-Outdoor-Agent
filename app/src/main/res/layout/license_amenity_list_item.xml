@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_marginVertical="@dimen/_5sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+<!--        android:layout_height="@dimen/_60sdp"-->
+
+
+        <ImageView
+            android:id="@+id/ivAmenityIcon"
+            style="@style/SideLeftImageStyle"
+            android:layout_width="0dp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical|right"
+            android:layout_weight="0.6"
+            android:src="@drawable/ic_eye" />
+
+        <TextView
+            android:id="@+id/tvAmenityName"
+            android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/nunito_sans_bold"
+            android:gravity="left|center_vertical"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/_9ssp" />
+
+        <TextView
+            android:id="@+id/tvAmenityDescription"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/nunito_sans_semibold"
+            android:gravity="left|center_vertical"
+            android:text=""
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:textColor="@color/home_screen_grey"
+            android:textSize="@dimen/_11ssp" />
+
+          <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.3"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/nunito_sans_semibold"
+            android:gravity="left|center_vertical"
+            android:text=""
+            android:textColor="@color/home_screen_grey"
+            android:textSize="@dimen/_8ssp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

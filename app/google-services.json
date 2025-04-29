@@ -1,0 +1,154 @@
+{
+  "project_info": {
+    "project_number": "251011184814",
+    "project_id": "my-outdoor-agent",
+    "storage_bucket": "my-outdoor-agent.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:251011184814:android:14d8edf1766f95bb52553f",
+        "android_client_info": {
+          "package_name": "app.moa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "251011184814-md95igp57ekhl0gog7dkk4lfpiar0bff.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "app.moa",
+            "certificate_hash": "64687db3e8a0ad1df733f06dfaef1bfd16196898"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBkdKfElzpXeTuKuhkhQBZlmNu2fHVxv8"
+        },
+        {
+          "current_key": "AIzaSyAaqcSTqFwoO1_4aJH2vNusAxTthJj6o4Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "251011184814-6hmvahosqgl3lobdooa5mrc4jm6pbeu2.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "251011184814-1d4jop18anj1n4qj3u79ivrkj27dep2i.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.myoutdoor.agent"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:251011184814:android:ec5b756a46f3b8b552553f",
+        "android_client_info": {
+          "package_name": "com.myoutdoor.agent"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "251011184814-0jtehs9r6b8i36jbek0lg3a92usbb9mk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.myoutdoor.agent",
+            "certificate_hash": "decc158756c80eb70145fa0e1f8b6c4f068b5545"
+          }
+        },
+        {
+          "client_id": "251011184814-b17da8068o9okihpg8uttd60p3am4nb2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.myoutdoor.agent",
+            "certificate_hash": "af206c3013f338930e1181e8ae05c02db68b1a6e"
+          }
+        },
+        {
+          "client_id": "251011184814-bbg1o8rel13r1clk0o2l2mkqk69spfr1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.myoutdoor.agent",
+            "certificate_hash": "d54085c246af3b441400033107d847198562ef27"
+          }
+        },
+        {
+          "client_id": "251011184814-l7lndcsod0fjqqt8c6gbsg0hptft4brs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.myoutdoor.agent",
+            "certificate_hash": "425d99ef1f62b7f6606b6b480bfa4e1bd7b8febe"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBkdKfElzpXeTuKuhkhQBZlmNu2fHVxv8"
+        },
+        {
+          "current_key": "AIzaSyAaqcSTqFwoO1_4aJH2vNusAxTthJj6o4Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "251011184814-6hmvahosqgl3lobdooa5mrc4jm6pbeu2.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "251011184814-1d4jop18anj1n4qj3u79ivrkj27dep2i.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.myoutdoor.agent"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:251011184814:android:760e7d4d8aac105552553f",
+        "android_client_info": {
+          "package_name": "com.trax.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBkdKfElzpXeTuKuhkhQBZlmNu2fHVxv8"
+        },
+        {
+          "current_key": "AIzaSyAaqcSTqFwoO1_4aJH2vNusAxTthJj6o4Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "251011184814-6hmvahosqgl3lobdooa5mrc4jm6pbeu2.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "251011184814-1d4jop18anj1n4qj3u79ivrkj27dep2i.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.myoutdoor.agent"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

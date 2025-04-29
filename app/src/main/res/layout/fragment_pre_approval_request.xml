@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/profile_grey"
+    tools:context=".fragment.PreApprovalRequest.PreApprovalRequestFragment">
+
+
+    <include
+        android:id="@+id/ilToolbar"
+        layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:id="@+id/llItemsTab"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ilToolbar"
+        android:background="@color/profile_grey"
+        android:orientation="vertical">
+
+
+        <GridView
+            android:id="@+id/llPre_ApprovalItemsTab"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:numColumns="2"
+            android:verticalSpacing="@dimen/_3sdp"
+            android:padding="@dimen/_5sdp"
+            tools:listitem="@layout/pre_approval_request_tab_item"
+            android:horizontalSpacing="@dimen/_10sdp"
+            android:layout_gravity="left"
+            android:visibility="visible"
+            android:gravity="center"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvNoDataFound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You have not requested any pre-Approvals"
+        android:textSize="@dimen/_12sdp"
+        android:textColor="@color/black"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

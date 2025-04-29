@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical"
+    tools:context=".activities.loginsignup.LoginSignUpActivity">
+
+
+    <LinearLayout
+        android:id="@+id/llLoginSignup"
+        style="@style/RoundCornerLoginRegisterLayoutStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10ssp"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/_4sdp"
+        android:paddingVertical="@dimen/_4sdp"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/tvLogin"
+            style="@style/RoundCornerGreenLoginButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_3sdp"
+            android:layout_weight="1"
+            android:text="@string/login" />
+
+        <TextView
+            android:id="@+id/tvSignup"
+            style="@style/RoundCornerWhiteLoginButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_3sdp"
+            android:layout_weight="1"
+            android:text="@string/sign_up" />
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/mainContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/llLoginSignup" />
+
+    <FrameLayout
+        android:id="@+id/mainContainerForgotPassword"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

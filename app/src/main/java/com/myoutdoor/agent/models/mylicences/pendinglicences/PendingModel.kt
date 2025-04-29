@@ -1,0 +1,30 @@
+package com.myoutdoor.agent.models.mylicences.pendinglicences
+
+data class PendingModel(
+    var acres: Double,
+    var activityNumber: String,
+    var agreementName: String,
+    var clientInvoiceID: Int,
+    var countyName: String,
+    var displayName: String,
+    var guestPassAllowedDays: Int,
+    var guestPassCost: Double,
+    var imageFilename: String,
+    var isPaid: Boolean,
+    var licenseActivityID: Int,
+    var licenseAgreement: String,
+    var licenseContractID: Int,
+    var licenseEndDate: String,
+    var licenseStartDate: String,
+    var maxMembersAllowed: Int,
+    var memberPassCost: Double,
+    var memberType: String,
+    var motorizedAccess: Boolean,
+    var productID: Int,
+    var productNo: String,
+    var productTypeID: Int,
+    var publicKey: String,
+    var showAcceptButton: Boolean,
+    var showPayButton: Boolean,
+    var stateName: String
+)

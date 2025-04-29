@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingVertical="@dimen/_25sdp"
+    android:paddingHorizontal="@dimen/_30sdp">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:background="@color/green"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/nunito_sans_semibold"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_33sdp"
+                            android:textSize="@dimen/_11ssp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:text="Vehicle Information" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingHorizontal="@dimen/_15sdp"
+                            android:orientation="vertical"
+                            android:layout_weight="10">
+
+                            <TextView
+                                style="@style/MediumGreyTextStyle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_15sdp"
+                                android:textSize="@dimen/_11ssp"
+                                android:gravity="left"
+                                android:text="Vehicle Make" />
+
+                            <EditText
+                                android:id="@+id/edtVehicleMake"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_35sdp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:background="@drawable/custom_editext_shape"
+                                android:hint="Vehicle Make"
+                                android:paddingHorizontal="@dimen/_15sdp"
+                                android:imeOptions="actionDone"
+                                android:inputType="text"
+                                android:maxLines="1"
+                                android:singleLine="true"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/greylr"
+                                android:textSize="@dimen/_11ssp"
+                                android:textStyle="normal" />
+
+                            <!-- <View
+                                 android:layout_width="match_parent"
+                                 android:layout_height="@dimen/_1sdp"
+                                 android:layout_marginTop="@dimen/_10sdp"
+                                 android:background="@color/greylr" />-->
+
+                            <TextView
+                                style="@style/MediumGreyTextStyle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:textSize="@dimen/_11ssp"
+                                android:gravity="left"
+                                android:text="@string/vehicle_model" />
+
+
+
+                            <EditText
+                                android:id="@+id/edtVehicleModel"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_35sdp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:background="@drawable/custom_editext_shape"
+                                android:hint="@string/vehicle_model"
+                                android:paddingHorizontal="@dimen/_15sdp"
+                                android:imeOptions="actionDone"
+                                android:inputType="text"
+                                android:maxLines="1"
+                                android:singleLine="true"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/greylr"
+                                android:textSize="@dimen/_11ssp"
+                                android:textStyle="normal" />
+
+                            <TextView
+                                style="@style/MediumGreyTextStyle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:textSize="@dimen/_11ssp"
+                                android:gravity="left"
+                                android:text="@string/vehicle_color" />
+
+                            <EditText
+                                android:id="@+id/edtVehicleColor"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_35sdp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:background="@drawable/custom_editext_shape"
+                                android:hint="@string/vehicle_color"
+                                android:imeOptions="actionDone"
+                                android:inputType="text"
+                                android:maxLines="1"
+                                android:paddingHorizontal="@dimen/_15sdp"
+                                android:singleLine="true"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/greylr"
+                                android:textSize="@dimen/_11ssp"
+                                android:textStyle="normal" />
+
+                            <TextView
+                                style="@style/MediumGreyTextStyle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:textSize="@dimen/_11ssp"
+                                android:gravity="left"
+                                android:text="@string/vehicle_license_plate" />
+
+                            <EditText
+                                android:id="@+id/edtVehicleLicensePlate"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_35sdp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:background="@drawable/custom_editext_shape"
+                                android:hint="@string/vehicle_license_plate"
+                                android:imeOptions="actionDone"
+                                android:inputType="text"
+                                android:maxLines="2"
+                                android:paddingHorizontal="@dimen/_15sdp"
+                                android:singleLine="true"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/greylr"
+                                android:textSize="@dimen/_11ssp"
+                                android:textStyle="normal" />
+
+
+                            <TextView
+                                style="@style/MediumGreyTextStyle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:textSize="@dimen/_11ssp"
+                                android:gravity="left"
+                                android:text="@string/vehicle_state" />
+
+                            <com.skydoves.powerspinner.PowerSpinnerView
+                                android:id="@+id/psSelectState"
+                                android:layout_weight="1"
+                                android:background="@drawable/custom_editext_shape"
+                                android:paddingHorizontal="@dimen/_15sdp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_35sdp"
+                                android:gravity="left|center_vertical"
+                                android:hint="@string/select_state"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/nunito_sans_semibold"
+                                android:textColorHint="@color/black"
+                                android:textSize="@dimen/_11ssp"
+                                app:spinner_arrow_gravity="end"
+                                app:spinner_arrow_tint="@color/green"
+                                app:spinner_divider_show="true"
+                                app:spinner_divider_size="0.4dp"
+                                app:spinner_item_array="@array/home_select_items"
+                                app:spinner_popup_animation="dropdown"
+                                app:spinner_popup_background="@color/white"
+                                app:spinner_popup_elevation="@dimen/_14sdp" />
+
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_50sdp"
+                                android:layout_marginTop="@dimen/_25sdp"
+                                android:paddingVertical="@dimen/_7sdp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tvSaveChanges"
+                                    style="@style/GreenDialogButtonStyle"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginRight="@dimen/_15sdp"
+                                    android:padding="@dimen/_8sdp"
+                                    android:textSize="@dimen/_11ssp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/login_register_shape_green"
+                                    android:gravity="center"
+                                    android:text="@string/save_changes" />
+
+                                <TextView
+                                    android:id="@+id/tvCancelChanges"
+                                    style="@style/WhiteDialogButtonStyle"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:padding="@dimen/_8sdp"
+                                    android:textSize="@dimen/_11ssp"
+                                    android:clipToOutline="true"
+                                    android:gravity="center"
+                                    android:text="@string/cancel"
+                                    android:textColor="@color/account_tab_grey_text"
+                                    android:textStyle="" />
+
+
+                            </LinearLayout>
+
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </ScrollView>
+
+                <!---add your views here-->
+            </LinearLayout>
+
+        </FrameLayout>
+
+
+
+    </FrameLayout>
+
+    <!--
+        <RelativeLayout
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_390sdp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="-15dp"
+                android:layout_marginRight="-15dp"
+                android:src="@drawable/ic_terms_cancel"/>
+
+            <WebView
+                android:id="@+id/wvShowTermsAndConditions"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/corner_round_rectangle"
+                android:gravity="center"/>
+
+        </RelativeLayout>
+    -->
+
+
+</RelativeLayout>

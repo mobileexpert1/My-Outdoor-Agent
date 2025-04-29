@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:layout_gravity="center"
+    android:background="@color/white">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:background="@color/green"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_33sdp"
+                        android:textSize="@dimen/_11ssp"
+                        android:layout_weight="1"
+                        android:padding="@dimen/_7sdp"
+                        android:gravity="start"
+                        android:text="@string/Authenication_required" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_10sdp"
+                        android:orientation="vertical">
+
+
+
+                        <TextView
+                            android:id="@+id/tvGuestInstruction"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:clipToOutline="true"
+                            android:gravity="center_horizontal"
+                            android:padding="@dimen/_8sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:text="@string/Please_login_first"
+                            android:textSize="@dimen/_11ssp" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_50sdp"
+                            android:paddingVertical="@dimen/_7sdp"
+                            android:layout_marginTop="@dimen/_40sdp"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:id="@+id/tvCancelGuest"
+                                style="@style/WhiteDialogButtonStyle"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:padding="@dimen/_8sdp"
+                                android:textSize="@dimen/_11ssp"
+                                android:clipToOutline="true"
+                                android:layout_marginRight="@dimen/_15sdp"
+                                android:gravity="center"
+                                android:text="@string/cancel"
+                                android:visibility="gone"
+                                android:textColor="@color/account_tab_grey_text"
+                                android:textStyle="" />
+
+
+                            <TextView
+                                android:id="@+id/tvGuestLogin"
+                                style="@style/GreenDialogButtonStyle"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:padding="@dimen/_8sdp"
+                                android:layout_marginLeft="@dimen/_60sdp"
+                                android:layout_marginRight="@dimen/_60sdp"
+                                android:textSize="@dimen/_11ssp"
+                                android:layout_weight="1"
+                                android:background="@drawable/login_register_shape_green"
+                                android:gravity="center"
+                                android:text="@string/login" />
+
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+
+            <!---add your views here-->
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>

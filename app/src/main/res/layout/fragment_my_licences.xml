@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/profile_grey"
+    tools:context=".fragment.mylicences.MyLicencesFragment">
+
+    <include
+        android:id="@+id/ilToolbar"
+        layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:id="@+id/llItemsTab"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ilToolbar"
+        android:background="@color/profile_grey"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/linearTop"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <TextView
+                android:id="@+id/tvActive"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/login_register_shape_green"
+                android:layout_marginHorizontal="@dimen/_3sdp"
+                android:text="Active"
+                android:gravity="center"
+                android:textColor="@color/white"
+                />
+<!--            <TextView-->
+<!--                android:id="@+id/tvMember"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@drawable/login_register_shape_green"-->
+<!--                android:layout_marginHorizontal="@dimen/_3sdp"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:gravity="center"-->
+<!--                android:visibility="gone"-->
+<!--                android:text="Member"-->
+<!--                />-->
+<!--            <TextView-->
+<!--                android:id="@+id/tvPending"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@drawable/login_register_shape_green"-->
+<!--                android:layout_marginHorizontal="@dimen/_3sdp"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:gravity="center"-->
+<!--                android:visibility="gone"-->
+<!--                android:text="Pending"-->
+<!--                />-->
+            <TextView
+                android:id="@+id/tvExpired"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/login_register_shape_green"
+                android:layout_marginHorizontal="@dimen/_3sdp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:text="Expired"
+                />
+        </LinearLayout>
+
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvMyLicences"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/_8sdp"
+            android:visibility="gone"
+            tools:listitem="@layout/special_for_you_recycler_item" />
+
+        <GridView
+            android:layout_below="@+id/llItemsTab"
+            android:id="@+id/gv_items"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:numColumns="2"
+            android:verticalSpacing="@dimen/_3sdp"
+            android:padding="@dimen/_5sdp"
+            tools:listitem="@layout/my_licences_active_grid_item"
+            android:horizontalSpacing="@dimen/_10sdp"
+            android:layout_gravity="left"
+            android:visibility="visible"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tvNoDataFound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="no data found"
+        android:textSize="@dimen/_12sdp"
+        android:textColor="@color/black"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"
+        />
+
+
+
+</RelativeLayout>

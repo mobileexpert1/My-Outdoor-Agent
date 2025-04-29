@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:layout_gravity="center"
+    android:background="@color/white">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_33sdp"
+                        android:layout_weight="1"
+                        android:background="@color/green"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="@string/day_pass"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_11ssp" />
+
+
+                    <TextView
+                        android:layout_marginLeft="13dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Select_date"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:textColor="@color/black">
+
+                    </TextView>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/_10sdp">
+
+
+                       <!-- <com.applandeo.materialcalendarview.CalendarView
+                            android:id="@+id/calendarView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:datePicker="true"
+                            app:daysLabelsColor="@color/black"
+                            app:headerColor="@color/green"
+                            app:headerLabelColor="@color/white"
+                            app:selectionColor="@color/green"
+                            app:selectionLabelColor="@color/white"
+                            app:todayLabelColor="@color/green"
+                            app:type="many_days_picker" />-->
+
+
+                        <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+                            android:id="@+id/calendarView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:mcv_showOtherDates="all"
+                            app:mcv_selectionColor="@color/green"
+                            app:mcv_dateTextAppearance="@color/green"
+                            app:mcv_calendarMode="month"
+                            app:mcv_selectionMode="multiple"
+                            app:mcv_monthLabels="@color/green"
+                            app:mcv_weekDayLabels="@color/green"
+                            >
+                        </com.prolificinteractive.materialcalendarview.MaterialCalendarView>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Select_number_of_days"
+                            android:textColor="@color/black">
+
+                        </TextView>
+
+
+                        <LinearLayout
+                            android:id="@+id/rightthirdLL"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="10dp"
+                            android:weightSum="2">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_horizontal|center_vertical"
+                                android:orientation="horizontal"
+                                android:paddingBottom="2dp">
+
+                                <LinearLayout
+                                    android:id="@+id/llminus"
+                                    android:layout_width="50dp"
+                                    android:layout_height="40dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="6dp"
+                                    android:layout_marginTop="1dp"
+                                    android:background="@drawable/custom_calender_button"
+                                    android:layout_marginRight="3dp"
+                                    android:gravity="center">
+
+
+                                    <ImageView
+                                        android:layout_width="18dp"
+                                        android:layout_height="20dp"
+                                        android:padding="3dp"
+                                        android:src="@drawable/minus_icon" />
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="50dp"
+                                    android:layout_height="40dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="6dp"
+                                    android:layout_marginTop="1dp"
+                                    android:layout_marginRight="3dp"
+                                    android:gravity="center">
+
+                                    <TextView
+                                        android:id="@+id/tvCount"
+                                        android:layout_width="23dp"
+                                        android:layout_height="23dp"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:text="1"
+                                        android:padding="3dp"
+                                        android:src="@drawable/pen"
+                                        android:textSize="15dp" />
+
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:id="@+id/llPlus"
+                                    android:layout_width="50dp"
+                                    android:layout_height="40dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="1dp"
+                                    android:layout_marginRight="6dp"
+                                    android:background="@drawable/custom_calender_button"
+                                    android:gravity="center">
+
+
+                                    <ImageView
+                                        android:layout_width="18dp"
+                                        android:layout_height="20dp"
+                                        android:padding="3dp"
+                                        android:src="@drawable/plus_icon" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_50sdp"
+                            android:layout_marginTop="@dimen/_40sdp"
+                            android:orientation="horizontal"
+                            android:paddingVertical="@dimen/_7sdp">
+
+                            <TextView
+                                android:id="@+id/tvCheckAvailability"
+                                style="@style/GreenDialogButtonStyle"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="@dimen/_15sdp"
+                                android:layout_weight="1"
+                                android:background="@drawable/login_register_shape_green"
+                                android:gravity="center"
+                                android:padding="@dimen/_8sdp"
+                                android:text="@string/check_availability"
+                                android:textSize="@dimen/_8ssp" />
+
+                            <TextView
+                                android:id="@+id/tvCancelAvailability"
+                                style="@style/WhiteDialogButtonStyle"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:clipToOutline="true"
+                                android:gravity="center"
+                                android:padding="@dimen/_8sdp"
+                                android:text="@string/cancel"
+                                android:textColor="@color/account_tab_grey_text"
+                                android:textSize="@dimen/_8ssp"
+                                android:textStyle="" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+
+            <!---add your views here-->
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

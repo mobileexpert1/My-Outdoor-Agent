@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/profile_grey"
+    tools:context=".fragment.ProfileFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+        <LinearLayout
+            android:id="@+id/circle_profile_Ryt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/profile_background" />
+
+                        <TextView
+                            android:id="@+id/tvProfile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:textSize="@dimen/_15ssp"
+                            android:fontFamily="@font/nunito_sans_semibold"
+                            android:gravity="center"
+                            android:text="@string/my_account"
+                            android:textColor="@color/white" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:paddingTop="@dimen/_10sdp"
+                        android:layout_weight="1">
+                        <!--blank space-->
+                        <TextView
+                            android:id="@+id/tvProfileName"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_below="@+id/civProfileImage"
+                            android:gravity="center"
+                            android:text="Cristopher"
+                            android:textSize="@dimen/_12ssp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/civProfileImage"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_80sdp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/no_user_image"
+                    app:civ_border_color="#ffffff"
+                    app:civ_border_width="@dimen/_3sdp" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:layout_below="@+id/circle_profile_Ryt"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/_15sdp">
+
+                <LinearLayout
+                    android:id="@+id/llMyAccount"
+                    style="@style/RectangleMyWalletBoxLayoutStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_45sdp"
+                    android:paddingVertical="@dimen/_5sdp"
+                    android:paddingHorizontal="@dimen/_5sdp"
+                    android:orientation="horizontal"
+                    android:weightSum="8">
+
+                    <ImageView
+                        style="@style/SideLeftImageStyle"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_width="0dp"
+                        android:layout_marginHorizontal="@dimen/_2sdp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_user" />
+
+                    <TextView
+                        style="@style/SmallGreyTextStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:textSize="@dimen/_11ssp"
+                        android:layout_weight="6"
+                        android:gravity="center_vertical"
+                        android:text="@string/profile"
+                        android:textColor="@color/black" />
+
+                    <ImageView
+                        style="@style/SideLeftImageStyle"
+                        android:layout_width="@dimen/_14sdp"
+                        android:layout_height="@dimen/_14sdp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginHorizontal="@dimen/_2sdp"
+                        android:layout_marginVertical="@dimen/_26sdp"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_right" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llMyLicences"
+                    style="@style/RectangleMyWalletBoxLayoutStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_45sdp"
+                    android:paddingVertical="@dimen/_5sdp"
+                    android:paddingHorizontal="@dimen/_5sdp"
+                    android:orientation="horizontal"
+                    android:weightSum="8">
+
+                    <ImageView
+                        style="@style/SideLeftImageStyle"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_width="0dp"
+                        android:layout_marginHorizontal="@dimen/_2sdp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_licence" />
+
+                    <TextView
+                        style="@style/SmallGreyTextStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:textSize="@dimen/_11ssp"
+                        android:layout_weight="6"
+                        android:gravity="center_vertical"
+                        android:text="@string/my_licenses"
+                        android:textColor="@color/black" />
+
+                    <ImageView
+                        style="@style/SideLeftImageStyle"
+                        android:layout_height="@dimen/_14sdp"
+                        android:layout_width="@dimen/_14sdp"
+                        android:layout_marginHorizontal="@dimen/_2sdp"
+                        android:layout_marginVertical="@dimen/_26sdp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_right" />
+
+
+                </LinearLayout>
+
+
+
+
+                <!--
+                            <LinearLayout
+                                android:id="@+id/llMyLicences"
+                                style="@style/RectangleMyWalletBoxLayoutStyle"
+                                android:layout_width="match_parent"
+                                android:layout_height="60dp"
+                                android:paddingVertical="17dp"
+                                android:paddingHorizontal="5dp"
+                                android:orientation="horizontal"
+                                android:weightSum="8">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center_vertical"
+                                    android:src="@drawable/licence" />
+
+                                <TextView
+                                    style="@style/SmallGreyTextStyle"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:paddingLeft="10dp"
+                                    android:layout_weight="6"
+                                    android:gravity="center_vertical"
+                                    android:text="@string/my_licences"
+                                    android:textColor="@color/black" />
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center_vertical"
+                                    android:layout_marginVertical="3dp"
+                                    android:src="@drawable/black_arrow_right" />
+
+
+                            </LinearLayout>
+                -->
+
+                <LinearLayout
+                    android:id="@+id/llPre_Approval"
+                    style="@style/RectangleMyWalletBoxLayoutStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_45sdp"
+                    android:paddingVertical="@dimen/_5sdp"
+                    android:paddingHorizontal="@dimen/_5sdp"
+                    android:orientation="horizontal"
+                    android:weightSum="8">
+
+                    <ImageView
+                        style="@style/SideLeftImageStyle"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_width="0dp"
+                        android:layout_marginHorizontal="@dimen/_2sdp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_pre_app" />
+
+                    <TextView
+                        style="@style/SmallGreyTextStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:textSize="@dimen/_11ssp"
+                        android:layout_weight="6"
+                        android:gravity="center_vertical"
+                        android:text="@string/pre_approval"
+                        android:textColor="@color/black" />
+
+                    <ImageView
+                        style="@style/SideLeftImageStyle"
+                        android:layout_height="@dimen/_14sdp"
+                        android:layout_width="@dimen/_14sdp"
+                        android:layout_marginHorizontal="@dimen/_2sdp"
+                        android:layout_marginVertical="@dimen/_26sdp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_right" />
+
+
+                </LinearLayout>
+
+
+
+                <!--
+                            <LinearLayout
+                                android:id="@+id/llPre_Approval"
+                                style="@style/RectangleMyWalletBoxLayoutStyle"
+                                android:layout_width="match_parent"
+                                android:layout_height="60dp"
+                                android:paddingVertical="17dp"
+                                android:paddingHorizontal="5dp"
+                                android:orientation="horizontal"
+                                android:weightSum="8">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center_vertical"
+                                    android:src="@drawable/check_box_w_green_tick" />
+
+                                <TextView
+                                    style="@style/SmallGreyTextStyle"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:paddingLeft="10dp"
+                                    android:layout_weight="6"
+                                    android:gravity="center_vertical"
+                                    android:text="@string/pre_approval"
+                                    android:textColor="@color/black" />
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center_vertical"
+                                    android:layout_marginVertical="3dp"
+                                    android:src="@drawable/black_arrow_right" />
+
+
+                            </LinearLayout>
+                -->
+
+
+                <LinearLayout
+                    android:id="@+id/llHelp"
+                    style="@style/RectangleMyWalletBoxLayoutStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_45sdp"
+                    android:paddingVertical="@dimen/_5sdp"
+                    android:paddingHorizontal="@dimen/_5sdp"
+                    android:orientation="horizontal"
+                    android:weightSum="8">
+
+                    <ImageView
+                        style="@style/SideLeftImageStyle"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_width="0dp"
+                        android:layout_marginHorizontal="@dimen/_2sdp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_help" />
+
+                    <TextView
+                        style="@style/SmallGreyTextStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:textSize="@dimen/_11ssp"
+                        android:layout_weight="6"
+                        android:gravity="center_vertical"
+                        android:text="@string/help"
+                        android:textColor="@color/black" />
+
+                    <ImageView
+                        style="@style/SideLeftImageStyle"
+                        android:layout_height="@dimen/_14sdp"
+                        android:layout_width="@dimen/_14sdp"
+                        android:layout_marginHorizontal="@dimen/_2sdp"
+                        android:layout_marginVertical="@dimen/_26sdp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_right" />
+
+
+                </LinearLayout>
+
+
+                <!--
+                            <LinearLayout
+                                android:id="@+id/llHelp"
+                                style="@style/RectangleMyWalletBoxLayoutStyle"
+                                android:layout_width="match_parent"
+                                android:layout_height="60dp"
+                                android:paddingVertical="17dp"
+                                android:paddingHorizontal="5dp"
+                                android:orientation="horizontal"
+                                android:weightSum="8">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center_vertical"
+                                    android:src="@drawable/question" />
+
+                                <TextView
+                                    style="@style/SmallGreyTextStyle"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:paddingLeft="10dp"
+                                    android:layout_weight="6"
+                                    android:gravity="center_vertical"
+                                    android:text="@string/help"
+                                    android:textColor="@color/black" />
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center_vertical"
+                                    android:layout_marginVertical="3dp"
+                                    android:src="@drawable/black_arrow_right" />
+
+
+                            </LinearLayout>
+                -->
+
+
+                <LinearLayout
+                    android:id="@+id/llContactUs"
+                    style="@style/RectangleMyWalletBoxLayoutStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_45sdp"
+                    android:paddingVertical="@dimen/_5sdp"
+                    android:paddingHorizontal="@dimen/_5sdp"
+                    android:orientation="horizontal"
+                    android:weightSum="8">
+
+                    <ImageView
+                        style="@style/SideLeftImageStyle"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_width="0dp"
+                        android:layout_marginHorizontal="@dimen/_2sdp"
+                        android:layout_marginVertical="@dimen/_10sdp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_contact" />
+
+                    <TextView
+                        style="@style/SmallGreyTextStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:textSize="@dimen/_11ssp"
+                        android:layout_weight="6"
+                        android:gravity="center_vertical"
+                        android:text="@string/contact_us"
+                        android:textColor="@color/black" />
+
+                    <ImageView
+                        style="@style/SideLeftImageStyle"
+                        android:layout_height="@dimen/_14sdp"
+                        android:layout_width="@dimen/_14sdp"
+                        android:layout_marginHorizontal="@dimen/_2sdp"
+                        android:layout_marginVertical="@dimen/_26sdp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_right" />
+
+
+                </LinearLayout>
+
+
+
+
+
+                <LinearLayout
+                    android:id="@+id/llPrivacyPolicy"
+                    style="@style/RectangleMyWalletBoxLayoutStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_45sdp"
+                    android:paddingVertical="@dimen/_5sdp"
+                    android:paddingHorizontal="@dimen/_5sdp"
+                    android:orientation="horizontal"
+                    android:weightSum="8">
+
+                    <ImageView
+                        style="@style/SideLeftImageStyle"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_width="0dp"
+                        android:layout_marginHorizontal="@dimen/_2sdp"
+                        android:layout_marginVertical="@dimen/_10sdp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_contact" />
+
+                    <TextView
+                        style="@style/SmallGreyTextStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:textSize="@dimen/_11ssp"
+                        android:layout_weight="6"
+                        android:gravity="center_vertical"
+                        android:text="@string/privacy_policy"
+                        android:textColor="@color/black" />
+
+                    <ImageView
+                        style="@style/SideLeftImageStyle"
+                        android:layout_height="@dimen/_14sdp"
+                        android:layout_width="@dimen/_14sdp"
+                        android:layout_marginHorizontal="@dimen/_2sdp"
+                        android:layout_marginVertical="@dimen/_26sdp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_right" />
+
+
+                </LinearLayout>
+
+
+                <!--
+                            <LinearLayout
+                                android:id="@+id/llContactUs"
+                                style="@style/RectangleMyWalletBoxLayoutStyle"
+                                android:layout_width="match_parent"
+                                android:layout_height="60dp"
+                                android:paddingVertical="17dp"
+                                android:paddingHorizontal="5dp"
+                                android:orientation="horizontal"
+                                android:weightSum="8">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center_vertical"
+                                    android:src="@drawable/contact_form" />
+
+                                <TextView
+                                    style="@style/SmallGreyTextStyle"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:paddingLeft="10dp"
+                                    android:layout_weight="6"
+                                    android:gravity="center_vertical"
+                                    android:text="@string/contact_us"
+                                    android:textColor="@color/black" />
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center_vertical"
+                                    android:layout_marginVertical="3dp"
+                                    android:src="@drawable/black_arrow_right" />
+
+
+                            </LinearLayout>
+                -->
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clOrderProcess"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:padding="@dimen/_5sdp"
+        app:layout_constraintTop_toTopOf="parent">
+        <RelativeLayout
+            android:id="@+id/relativeOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="@dimen/_10sdp"
+            app:layout_constraintTop_toTopOf="parent">
+            <TextView
+                android:id="@+id/tvOne"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:text="1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_8sdp"
+                android:background="@drawable/round_green_shape"
+                android:gravity="center"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/harvest_information"
+            android:textSize="@dimen/_7sdp"
+            android:textColor="@color/greylr"
+            app:layout_constraintTop_toBottomOf="@+id/relativeOne"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="@dimen/_5sdp"
+            />
+
+        <View
+            android:id="@+id/viewHarvest"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            app:layout_constraintStart_toEndOf="@+id/relativeOne"
+            app:layout_constraintEnd_toStartOf="@+id/relativeTwo"
+            app:layout_constraintTop_toTopOf="@+id/relativeOne"
+            app:layout_constraintBottom_toBottomOf="@id/relativeOne"
+            android:background="@color/greylr"
+            android:layout_marginHorizontal="@dimen/_5sdp"
+            />
+
+        <RelativeLayout
+            android:id="@+id/relativeTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="@dimen/_10sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            >
+            <TextView
+                android:id="@+id/tvSecond"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:text="2"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_8sdp"
+                android:background="@drawable/round_grey_shape"
+                android:gravity="center"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/previous_members"
+            android:textColor="@color/greylr"
+            android:textSize="@dimen/_7sdp"
+            app:layout_constraintTop_toBottomOf="@+id/relativeTwo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            />
+
+        <View
+            android:id="@+id/viewPrevious"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            app:layout_constraintStart_toEndOf="@+id/relativeTwo"
+            app:layout_constraintEnd_toStartOf="@+id/relativeThree"
+            android:background="@color/greylr"
+            app:layout_constraintTop_toTopOf="@+id/relativeTwo"
+            app:layout_constraintBottom_toBottomOf="@id/relativeTwo"
+            android:layout_marginHorizontal="@dimen/_5sdp"
+            />
+
+        <RelativeLayout
+            android:id="@+id/relativeThree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="@dimen/_10sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            >
+
+            <TextView
+                android:id="@+id/tvThird"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:background="@drawable/round_grey_shape"
+                android:gravity="center"
+                android:text="3"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_8sdp" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/contract_agreement"
+            android:textColor="@color/greylr"
+            android:textSize="@dimen/_7sdp"
+            app:layout_constraintTop_toBottomOf="@+id/relativeThree"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="@dimen/_5sdp"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

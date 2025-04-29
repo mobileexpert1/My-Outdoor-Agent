@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_90sdp"
+    android:layout_margin="@dimen/_2sdp"
+    android:background="@drawable/grey_border_rectangle"
+    android:padding="@dimen/_5sdp">
+
+    <TextView
+        android:id="@+id/tvMake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunito_sans_bold"
+        android:text="Make"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvVehicleMake"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunito_sans_regular"
+        android:text=""
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/tvMake"
+        app:layout_constraintEnd_toStartOf="@+id/ivDeleteVehicleDetails"
+        app:layout_constraintStart_toStartOf="@+id/tvVehicleModel"
+        app:layout_constraintTop_toTopOf="@+id/tvMake" />
+
+    <TextView
+        android:id="@+id/tvModel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:fontFamily="@font/nunito_sans_bold"
+        android:text="Model"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMake" />
+
+    <TextView
+        android:id="@+id/tvVehicleModel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunito_sans_regular"
+        android:text=""
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/tvModel"
+        app:layout_constraintEnd_toStartOf="@+id/ivDeleteVehicleDetails"
+        app:layout_constraintStart_toStartOf="@+id/tvColorDetails"
+        app:layout_constraintTop_toTopOf="@+id/tvModel" />
+
+    <TextView
+        android:id="@+id/tvColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:fontFamily="@font/nunito_sans_bold"
+        android:text="Color"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvModel" />
+
+
+    <TextView
+        android:id="@+id/tvColorDetails"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunito_sans_regular"
+        android:text=""
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        app:layout_constraintBottom_toBottomOf="@+id/tvColor"
+        app:layout_constraintEnd_toStartOf="@+id/ivDeleteVehicleDetails"
+        app:layout_constraintStart_toStartOf="@+id/tvVehicleLicencePlate"
+        app:layout_constraintTop_toTopOf="@+id/tvColor" />
+
+    <TextView
+        android:id="@+id/tvLicencePlate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:fontFamily="@font/nunito_sans_bold"
+        android:text="Licence Plate"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvColor" />
+
+    <TextView
+        android:id="@+id/tvVehicleLicencePlate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:fontFamily="@font/nunito_sans_regular"
+        android:text=""
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        app:layout_constraintBottom_toBottomOf="@+id/tvLicencePlate"
+        app:layout_constraintEnd_toStartOf="@+id/ivDeleteVehicleDetails"
+        app:layout_constraintStart_toEndOf="@+id/tvLicencePlate"
+        app:layout_constraintTop_toTopOf="@+id/tvLicencePlate" />
+
+    <ImageView
+        android:id="@+id/ivDeleteVehicleDetails"
+        style="@style/SideLeftImageStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:src="@drawable/ic_delete"
+        app:layout_constraintBottom_toBottomOf="@+id/tvVehicleLicencePlate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvVehicleMake" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

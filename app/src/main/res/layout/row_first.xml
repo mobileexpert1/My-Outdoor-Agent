@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@null">
+
+
+    <LinearLayout
+        android:id="@+id/llMainClick"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginVertical="@dimen/_3sdp"
+        android:background="@drawable/white_border_shape"
+        android:elevation="1dp">
+
+        <TextView
+            android:id="@+id/rowParentText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:gravity="left|center_vertical"
+            android:paddingHorizontal="@dimen/_10sdp"
+            android:text="@string/adventure_seekers"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_12ssp" />
+
+        <ImageView
+            android:id="@+id/ivMainDropDown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="@dimen/_12sdp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_green_dropdown" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+    <!--
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/rowParentText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:textColor="#77B536"
+            android:textSize="25dp"/>
+    </LinearLayout>-->
